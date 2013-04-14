@@ -3,17 +3,19 @@
 At first, define the mapping as following:
 
 ```scala
+import util.Validations._
+
 val form = mapping(
   "name"        -> text(required, maxlength(40)), 
   "description" -> text()
-)(RepositoryCreationForm.apply)
+)(RegisterForm.apply)
 ```
 
 In the ScalatraServlet (or ScalatraFilter) implementation, you can validate request parameters using ```withValidation```. It validates request parameters before action and if any errors are detected, it throws an exception.
 
 ```scala
 post("/register") {
-  withValidation(form, params){ form: RepositoryCreationForm =>
+  withValidation(form, params){ form: RegisterForm =>
     ...
   }
 }
