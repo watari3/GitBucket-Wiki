@@ -37,4 +37,4 @@ In the view template, you can add client-side validation by adding ```validate="
 </form>
 ```
 
-Client-side validation calls ```<form-action>/validate``` to validate form contents. It returns a validation result as JSON. In this case, form action is ```/register```, so ```/register/validate``` will be called. ```ScalatraBase``` adds this JSON API automatically.
+Client-side validation calls ```<form-action>/validate``` to validate form contents. It returns a validation result as JSON. In this case, form action is ```/register```, so ```/register/validate``` is called before submitting a form. ```ScalatraBase``` adds this JSON API automatically.
