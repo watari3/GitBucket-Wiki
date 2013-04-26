@@ -1,9 +1,9 @@
-[Validations.scala](https://github.com/takezoe/gitbucket/blob/master/src/main/scala/util/Validations.scala) provides mapping and validation for request parameters. This is inspired by Play2 form mapping / validation.
+GitBucket uses [scalatra-forms](https://github.com/takezoe/scalatra-forms) to validate request parameters and map them to the scala object. This is inspired by Play2 form mapping / validation.
 
 At first, define the mapping as following:
 
 ```scala
-import util.Validations._
+import jp.sf.amateras.scalatra.forms._
 
 case class RegisterForm(name: String, description: String)
 
@@ -13,10 +13,10 @@ val form = mapping(
 )(RegisterForm.apply)
 ```
 
-In the Servlet (which extends ```ServletBase```), you can validate request parameters and take mapped object as following. It validates request parameters before action. If any errors are detected, it throws an exception.
+The servlet have to mixed in ```jp.sf.amateras.scalatra.forms.ClientSideValidationFormSupport``` to validate request parameters and take mapped object. It validates request parameters before action. If any errors are detected, it throws an exception.
 
 ```scala
-class RegisterServlet extends ServletBase {
+class RegisterServlet extends ScalatraServlet with ClientSideValidationFormSupport {
   post("/register", form) { form: RegisterForm =>
     ...
   }
@@ -26,7 +26,7 @@ class RegisterServlet extends ServletBase {
 In the view template, you can add client-side validation by adding ```validate="true"``` to your form. Error messages are set to ```span#error-<fieldname>```.
 
 ```html
-<form method="POST" action="/register" validation="true">
+<form method="POST" action="/register" validate="true">
   Name: <input type="name" type="text">
   <span class="error" id="error-name"></span>
   <br/>
