@@ -19,4 +19,4 @@ object AutoUpdate {
 
 Next, add a SQL file which updates database schema into [/src/main/resources/update/](https://github.com/takezoe/gitbucket/tree/master/src/main/resources/update) as ```MAJOR_MINOR.sql```.
 
-GitBucket stores the current version to ```GITBUCKET_HOME/version``` and checks it at start-up. If the stored version differs from the actual version, GitBucket executes differences of SQL files between the stored version and the actual version. And ```GITBUCKET_HOME/version``` is updated by the actual version.
+GitBucket stores the current version to ```GITBUCKET_HOME/version``` and checks it at start-up. If the stored version differs from the actual version, it executes differences of SQL files between the stored version and the actual version. And ```GITBUCKET_HOME/version``` is updated by the actual version.
