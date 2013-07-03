@@ -7,7 +7,7 @@ If you want to test GitBucket, input following command at the root directory of 
 C:\gitbucket> sbt ~container:start
 ```
 
-Then access to http://localhost:8080/ by your browser. The default administrator account is **root** / **root**.
+Then access to http://localhost:8080/ by your browser. The default administrator account is **root** and password is **root**.
 
 for Developers
 --------
