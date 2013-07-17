@@ -18,7 +18,7 @@ Next, add a SQL file which updates database schema into [/src/main/resources/upd
 
 GitBucket stores the current version to ```GITBUCKET_HOME/version``` and checks it at start-up. If the stored version differs from the actual version, it executes differences of SQL files between the stored version and the actual version. And ```GITBUCKET_HOME/version``` is updated by the actual version.
 
-We also add any Scala code for upgrade GitBucket which modifies ｒesources other than database. Override ```Version.update``` like below:
+We can also add any Scala code for upgrade GitBucket which modifies ｒesources other than database. Override ```Version.update``` like below:
 
 ```scala
 val versions = Seq(
