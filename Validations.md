@@ -38,3 +38,32 @@ In the view template, you can add client-side validation by adding ```validate="
 ```
 
 Client-side validation calls ```<form-action>/validate``` to validate form contents. It returns a validation result as JSON. In this case, form action is ```/register```, so ```/register/validate``` is called before submitting a form. ```ClientSideValidationFormSupport``` adds this JSON API automatically.
+
+For Ajax request, you have to use '''ajaxGet''' or '''ajaxPost''' to define action. It almost same as '''get''' or '''post'''. You can implement actions which handle Ajax request as same as normal actions.
+Small difference is they return validation errors as JSON.
+
+```scala
+ajaxPost("/register", form){ form =>
+  ...
+}
+```
+
+You can call these actions using jQuery as below:
+
+```javascript
+$('#register').click(function(e){
+  $.ajax($(this).attr('action'), {
+    type: 'POST',
+    data: {
+      name: $('#name').val(),
+      mail: $('#mail').val()
+    }
+  })
+  .done(function(data){
+    $('#result').text('Registered!');
+  })
+  .fail(function(data, status){
+    displayErrors($.parseJSON(data.responseText));
+  });
+});
+```
