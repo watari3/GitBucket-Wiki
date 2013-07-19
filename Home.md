@@ -5,4 +5,5 @@ Welcome to the gitbucket wiki!
    * [[Directory Structure|DirectoryStructure]]
    * [[Mapping and Validation|Validations]]
    * [[Authentication in Controller|Authentication]]
+   * [[About Action in Issue Comment|CommentAction]]
    * [[Automatic Schema Updating|AutoUpdate]]
