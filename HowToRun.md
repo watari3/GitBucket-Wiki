@@ -20,3 +20,14 @@ C:\gitbucket> sbt
 ...
 > ~ ;copy-resources;aux-compile
 ```
+
+Build war file
+--------
+
+To build war file, run the following command:
+
+```
+C:\gitbucket> sbt package
+```
+
+```gitbucket_2.10-x.x.x.war``` is generated into ```target/scala-2.10```.
