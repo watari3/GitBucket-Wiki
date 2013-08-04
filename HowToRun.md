@@ -7,7 +7,7 @@ If you want to test GitBucket, input following command at the root directory of 
 C:\gitbucket> sbt ~container:start
 ```
 
-Then access to http://localhost:8080/ by your browser. The default administrator account is **root** and password is **root**.
+Then access to **http://localhost:8080/** by your browser. The default administrator account is **root** and password is **root**.
 
 for Developers
 --------
@@ -30,4 +30,4 @@ To build war file, run the following command:
 C:\gitbucket> sbt package
 ```
 
-```gitbucket_2.10-x.x.x.war``` is generated into ```target/scala-2.10```.
+**gitbucket_2.10-x.x.x.war** is generated into **target/scala-2.10**.
