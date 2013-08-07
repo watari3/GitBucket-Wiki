@@ -31,5 +31,5 @@ This comment is displayed. But it can not be edited by all users, and also not c
 
 #####merge
 This value is saved when users have merged the pull request.
-At the same time, store the fixed value "Merge" to the ```CONTENT``` column.
-Therefore, this comment is not displayed, and not counted as a comment.
+At the same time, store the message to the ```CONTENT``` column.
+This comment is displayed. But it can not be edited by all users, and also not counted as a comment.
