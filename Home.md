@@ -6,4 +6,5 @@ Welcome to the gitbucket wiki!
    * [[Mapping and Validation|Validations]]
    * [[Authentication in Controller|Authentication]]
    * [[About Action in Issue Comment|CommentAction]]
+   * [[Activity Types|Activity]]
    * [[Automatic Schema Updating|AutoUpdate]]
