@@ -1,3 +1,5 @@
+GitBucket records several types of user activity to ```ACTIVITY``` table. Activity types are shown below:
+
 <table>
 <tr><th>type</th><th>message</th><th>additional information</th></tr>
 <tr><td>create_repository</td><td>$user created $owner/$repo</td><td>-</td></tr>
