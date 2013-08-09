@@ -7,4 +7,5 @@ Welcome to the gitbucket wiki!
    * [[Authentication in Controller|Authentication]]
    * [[About Action in Issue Comment|CommentAction]]
    * [[Activity Types|Activity]]
+   * [[Notification Email|Notification]]
    * [[Automatic Schema Updating|AutoUpdate]]
