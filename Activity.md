@@ -10,7 +10,7 @@ reopen_issue      |$user reopened issue $owner/$repo#$issueId            |-
 comment_issue     |$user commented on issue $owner/$repo#$issueId        |-
 comment_issue     |$user commented on pull request $owner/$repo#$issueId |-
 create_wiki       |$user created the $owner/$repo wiki                   |$page
-edit_wiki         |$user edited the $owner/$repo wiki                    |$page
+edit_wiki         |$user edited the $owner/$repo wiki                    |$page<br>$page:$commitId(since 1.5)
 push              |$user pushed to $owner/$repo#$branch to $owner/$repo  |$commitId:$shortMessage\n*
 create_tag        |$user created tag $tag at $owner/$repo                |-
 create_branch     |$user created branch $branch at $owner/$repo          |-
