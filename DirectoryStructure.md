@@ -13,7 +13,7 @@ GitBucket persists all data into HOME/gitbucket. This directory has following st
   * /tmp
     * /_upload
       * /SESSION_ID (removed at session timeout)
-        * yyyyMMddHHmmSSsss (temporary file of file uploading)
+        * yyyyMMddHHmmSSsss (temporary file for file uploading)
     * /USER_NAME
       * /init-REPO_NAME (used in repository creation and removed after it)
       * /REPO_NAME.wiki (working directory for wiki repository)
