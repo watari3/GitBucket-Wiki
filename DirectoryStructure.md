@@ -18,5 +18,5 @@ GitBucket persists all data into HOME/gitbucket. This directory has following st
       * /init-REPO_NAME (used in repository creation and removed after it)
       * /REPO_NAME.wiki (working directory for wiki repository)
       * /REPO_NAME
-         * /download (temporary directories is created under this directory)
+         * /download (temporary directories are created under this directory)
 ```
