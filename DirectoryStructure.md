@@ -1,4 +1,4 @@
-GitBucket persists all data into HOME/gitbucket. This directory has following structure:
+GitBucket persists all data into ```HOME/gitbucket```. This directory has following structure:
 
 ```
 * /HOME/gitbucket
@@ -20,3 +20,5 @@ GitBucket persists all data into HOME/gitbucket. This directory has following st
       * /REPO_NAME
          * /download (temporary directories are created under this directory)
 ```
+
+You can specify data directory via environment variable **GITBUCKET_HOME** instead of ```HOME/gitbucket```.
