@@ -12,3 +12,4 @@ will generate
 <span id="error-mailAddress" class="error"></span>
 ```
 - Use ```.string``` instead of ```<strong>``` in view.
+- ```repo/commit.scala.html``` and ```pulls/files.scala.html``` have same html fragment.
