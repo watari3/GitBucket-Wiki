@@ -9,3 +9,4 @@ Welcome to the gitbucket wiki!
    * [[Activity Types|Activity]]
    * [[Notification Email|Notification]]
    * [[Automatic Schema Updating|AutoUpdate]]
+   * [[Refactoring Plan|RefactoringPlan]]
