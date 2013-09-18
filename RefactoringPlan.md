@@ -14,3 +14,4 @@ will generate
 - Use ```.string``` instead of ```<strong>``` in view.
 - ```repo/commit.scala.html``` and ```pulls/files.scala.html``` have same html fragment.
 - ```admin/users/group.scala.html``` and ```settings/collaborators.scala.html``` have same JavaScript fragment for user name completion field.
+- If the form have multiple actions, we want to use the formaction of HTML5.
