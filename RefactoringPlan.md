@@ -13,5 +13,6 @@ will generate
 ```
 - **DONE** Use ```.string``` instead of ```<strong>``` in view.
 - **DONE** ```repo/commit.scala.html``` and ```pulls/files.scala.html``` have same html fragment.
-- ```admin/users/group.scala.html``` and ```settings/collaborators.scala.html``` have same JavaScript fragment for user name completion field.
+- ```admin/users/group.scala.html``` and ```settings/collaborators.scala.html``` have same JavaScript fragment - ```pulls/compare.scala.html``` and ```pulls/commits.scala.html``` have same html fragment.
+for user name completion field.
 - If the form have multiple actions, we want to use the formaction of HTML5.
