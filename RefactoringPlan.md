@@ -20,3 +20,5 @@ will generate
 ```
 val paths = request.getRequestURI.substring(request.getContextPath.length).split("/")
 ```
+- Use ```helper/dropdown.scala.html``` instead of direct Bootstrap use.
+- Header of the issue list and the pull request list have same html fragments.
