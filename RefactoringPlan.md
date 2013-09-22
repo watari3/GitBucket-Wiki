@@ -16,7 +16,7 @@ will generate
 - **DONE** ```admin/users/group.scala.html``` and ```settings/collaborators.scala.html``` have same JavaScript fragment for user name completion field.
 - **DONE** ```pulls/compare.scala.html``` and ```pulls/commits.scala.html``` have same html fragment.
 - If the form have multiple actions, we want to use the formaction of HTML5.
-- The following code is used in many places. So it should be provided by implicit conversion for HttpServletRequest.
+- **DONE** The following code is used in many places. So it should be provided by implicit conversion for HttpServletRequest.
 ```
 val paths = request.getRequestURI.substring(request.getContextPath.length).split("/")
 ```
