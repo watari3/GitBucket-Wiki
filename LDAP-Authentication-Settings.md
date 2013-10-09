@@ -5,7 +5,7 @@ GitBucket LDAP Authentication needs account that has read access to the LDAP.
 
 1. Login as Admin Account.
 2. Go to **Administration** and click **System Settings**.
-3. Check **LDAP** and enter this values.
+3. Check **LDAP** and enter these values.
 
 | Name | Description | Example Value |
 |:-----|:------------|:--------------|
