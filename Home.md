@@ -1,6 +1,6 @@
 Welcome to the gitbucket wiki!
 
- * for Development
+ * for Developers
    * [[How to run from source tree|HowToRun]]
    * [[Directory Structure|DirectoryStructure]]
    * [[Mapping and Validation|Validations]]
@@ -10,3 +10,5 @@ Welcome to the gitbucket wiki!
    * [[Notification Email|Notification]]
    * [[Automatic Schema Updating|AutoUpdate]]
    * [[Refactoring Plan|RefactoringPlan]]
+ * for Users
+   * [[LDAP Authentication Settings]]
