@@ -1,7 +1,7 @@
 GitBucket supports LDAP Authentication. <br />
 GitBucket LDAP Authentication needs account that has read access to the LDAP.
 
-## Settings
+## How to
 
 1. Login as Admin Account.
 2. Go to **Administration** and click **System Settings**.
@@ -13,6 +13,6 @@ GitBucket LDAP Authentication needs account that has read access to the LDAP.
 | LDAP Port | LDAP port | 389 (default 389) |
 | Bind DN | Username that has read access to the LDAP | tarou (or allows email address type: tarou@example.com) |
 | Bind Password | Password for Bind DN Account | password |
-| Base DN | Top level DN of your LDAP directory tree(use for search user) | DC=example.com,DC=com |
+| Base DN | Top level DN of your LDAP directory tree(use for search user) | DC=example,DC=com |
 | User name attribute | Name of the LDAP attribute. This is used as the GitBucket username | uid , sAMAccountName |
 | Mail address attribute | Email address of LDAP attribute | mail |
