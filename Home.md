@@ -16,4 +16,4 @@ for Developers
 for Users
 ----
  * [[LDAP Authentication Settings]]
- * [[Installation on Windows Server with IIS]]
+ * [[Installation on Windows Server with IIS and Helicontech Zoo]]
