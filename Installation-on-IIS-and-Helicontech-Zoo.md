@@ -28,9 +28,35 @@ Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servl
             <add name="gitbucket#x64" path="*" verb="*" modules="HeliconZoo_x64" scriptProcessor="java.jetty.8" resourceType="Unspecified" requireAccess="Script" preCondition="bitness64" />
             <add name="gitbucket#x86" path="*" verb="*" modules="HeliconZoo_x86" scriptProcessor="java.jetty.8" resourceType="Unspecified" requireAccess="Script" preCondition="bitness32" />
         </handlers>
+        <security>
+            <requestFiltering>
+                <fileExtensions>
+                    <remove fileExtension=".ldb" />
+                    <remove fileExtension=".refresh" />
+                    <remove fileExtension=".webinfo" />
+                    <remove fileExtension=".vjsproj" />
+                    <remove fileExtension=".vbproj" />
+                    <remove fileExtension=".vb" />
+                    <remove fileExtension=".resx" />
+                    <remove fileExtension=".resources" />
+                    <remove fileExtension=".mdf" />
+                    <remove fileExtension=".mdb" />
+                    <remove fileExtension=".master" />
+                    <remove fileExtension=".exclude" />
+                    <remove fileExtension=".java" />
+                    <remove fileExtension=".csproj" />
+                    <remove fileExtension=".config" />
+                    <remove fileExtension=".ascx" />
+                    <remove fileExtension=".asax" />
+                    <remove fileExtension=".cs" />
+                </fileExtensions>
+            </requestFiltering>
+        </security>
   </system.webServer>
 </configuration>
 ```
+
+In the above configuration, some file extensions are removed from request filtering because when running under IIS certain file extensions such as "java", "cs","vb", "csproj","vbproj","ascx", and "asax" will not be viewable in the repository and by default you will get a 404 error.
 
 ### Troubleshooting
 
