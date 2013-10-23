@@ -26,7 +26,7 @@ Therefore, this comment is not displayed, and not counted as a comment.
 
 #####commit
 This value is saved when users have pushed including the ```#issueId``` to the commit message.
-At the same time, store it to the ```CONTENT``` column.
+At the same time, store it to the ```CONTENT``` column with its commit id.
 This comment is displayed. But it can not be edited by all users, and also not counted as a comment.
 
 #####merge
