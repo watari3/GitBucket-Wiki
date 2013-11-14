@@ -50,6 +50,15 @@ Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servl
                     <remove fileExtension=".asax" />
                     <remove fileExtension=".cs" />
                 </fileExtensions>
+                <hiddenSegments>
+                    <remove segment="App_Browsers" />
+                    <remove segment="App_WebReferences" />
+                    <remove segment="App_LocalResources" />
+                    <remove segment="App_GlobalResources" />
+                    <remove segment="App_Data" />
+                    <remove segment="App_code" />
+                    <remove segment="web.config" />
+                </hiddenSegments>
             </requestFiltering>
         </security>
   </system.webServer>
