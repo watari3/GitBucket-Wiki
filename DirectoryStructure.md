@@ -1,4 +1,4 @@
-GitBucket persists all data into ```HOME/gitbucket```. This directory has following structure:
+GitBucket persists all data into __HOME/gitbucket__. This directory has following structure:
 
 ```
 * /HOME/gitbucket
@@ -21,4 +21,15 @@ GitBucket persists all data into ```HOME/gitbucket```. This directory has follow
          * /download (temporary directories are created under this directory)
 ```
 
-You can specify data directory via environment variable **GITBUCKET_HOME** instead of ```HOME/gitbucket```.
+There are some ways to specify the data directory instead of the default location __HOME/gitbucket__.
+
+1. Environment variable __GITBUCKET_HOME__
+2. System property __gitbucket.home__ (e.g. ```-Dgitbucket.home=PATH_TO_DATADIR```)
+3. Command line option for embedded Jetty (e.g. ```java -jar gitbucket.war --data=PATH_TO_DATADIR```)
+4. Context parameter __gitbucket.home__ in web.xml like below:
+```xml
+<context-param>
+  <param-name>gitbucket.home</param-name>
+  <param-value>PATH_TO_DATADIR</param-value>
+</context-param>
+```
