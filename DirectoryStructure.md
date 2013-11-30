@@ -21,7 +21,7 @@ GitBucket persists all data into __HOME/gitbucket__. This directory has followin
          * /download (temporary directories are created under this directory)
 ```
 
-There are some ways to specify the data directory instead of the default location __HOME/gitbucket__.
+There are some ways to specify the data directory instead of the default location.
 
 1. Environment variable __GITBUCKET_HOME__
 2. System property __gitbucket.home__ (e.g. ```-Dgitbucket.home=PATH_TO_DATADIR```)
