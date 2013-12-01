@@ -1,4 +1,3 @@
-## Rerverse proxy with Nginx
 ### Prerequisites
 1. Is installed and running on your server.
 2. Gitbucket is running on some `port`. The default is `8080`.
