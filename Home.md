@@ -18,3 +18,4 @@ for Users
  * [[LDAP Authentication Settings]]
  * [[Installation on IIS and Helicontech Zoo]]
  * [[Reverse proxy with Nginx]]
+ * [[Reverse proxy with Apache]]
