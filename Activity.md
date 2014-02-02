@@ -14,6 +14,7 @@ edit_wiki         |$user edited the $owner/$repo wiki                    |$page<
 push              |$user pushed to $owner/$repo#$branch to $owner/$repo  |$commitId:$shortMessage\n*
 create_tag        |$user created tag $tag at $owner/$repo                |-
 create_branch     |$user created branch $branch at $owner/$repo          |-
+delete_branch     |$user deleted branch $branch at $owner/$repo          |-
 fork              |$user forked $owner/$repo to $owner/$repo             |-
 open_pullreq      |$user opened pull request $owner/$repo#issueId        |-
 merge_pullreq     |$user merge pull request $owner/$repo#issueId         |-
