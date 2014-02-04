@@ -12,6 +12,7 @@ To determine if it was any operation, you see the ```ACTION``` column.
 |reopen|
 |commit|
 |merge|
+|delete|
 
 #####comment
 This value is saved when users have made a normal comment.
@@ -33,3 +34,8 @@ This comment is displayed. But it can not be edited by all users, and also not c
 This value is saved when users have merged the pull request.
 At the same time, store the message to the ```CONTENT``` column.
 This comment is displayed. But it can not be edited by all users, and also not counted as a comment.
+
+#####delete
+This value is saved when users have deleted the branch. Users can delete branch after merging pull request which is requested from the same repository.
+At the same time, store it to the ```CONTENT``` column with the deleted branch name.
+Therefore, this comment is not displayed, and not counted as a comment.
