@@ -42,4 +42,4 @@ At the same time, store it to the ```CONTENT``` column with the deleted branch n
 Therefore, this comment is not displayed, and not counted as a comment.
 
 ####refer
-This value is saved when other issue or issue comment contains reference to the issue.
+This value is saved when other issue or issue comment contains reference to the issue like ```#issueId```.
