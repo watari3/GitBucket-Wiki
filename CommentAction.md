@@ -43,3 +43,4 @@ Therefore, this comment is not displayed, and not counted as a comment.
 
 ####refer
 This value is saved when other issue or issue comment contains reference to the issue like ```#issueId```.
+At the same time, store id and title of the referrer issue as ```id:title```.
