@@ -11,7 +11,6 @@ for Developers
  * [[Activity Types|Activity]]
  * [[Notification Email|Notification]]
  * [[Automatic Schema Updating|AutoUpdate]]
- * [[Refactoring Plan|RefactoringPlan]]
 
 for Users
 ----
