@@ -7,6 +7,8 @@ This directory has following structure:
   * /repositoties
     * /USER_NAME
       * / REPO_NAME.git (substance of repository. GitServlet sees this directory)
+      * / REPO_NAME
+        * /issues (files which are attached to issue)
       * / REPO_NAME.wiki.git (wiki repository)
   * /data
     * /USER_NAME
