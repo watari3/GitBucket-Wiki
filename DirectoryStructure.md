@@ -14,6 +14,9 @@ This directory has following structure:
     * /USER_NAME
       * /files
         * avatar.xxx (image file of user avatar)
+  * /plugins
+    * /PLUGIN_NAME
+      * plugin.js
   * /tmp
     * /_upload
       * /SESSION_ID (removed at session timeout)
