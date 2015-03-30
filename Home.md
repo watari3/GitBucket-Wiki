@@ -5,5 +5,6 @@ Welcome to the GitBucket wiki!
  * [[Installation on IIS and Helicontech Zoo]]
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
+ * [[Setup Jenkins GitHub pull request builder plugin]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/takezoe/gitbucket/blob/master/doc/readme.md
