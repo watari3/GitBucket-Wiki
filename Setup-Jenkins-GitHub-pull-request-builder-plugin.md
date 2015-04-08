@@ -1,8 +1,10 @@
   1. install jenkins with GitHub pull request builder plugin as `http://jenkins:9090/`
   2. install gitbucket as `http://gitbucket:8080/`
-  3. create repository on gitbucket as `http://gitbucket:8080/root/test`
-  4. set webhook setting `http://jenkins:9090/ghprbhook/`
-  5. create personal access token on `http://gitbucket:8080/root/_application` ( root is user has permission to root/test )
+  3. Create repository on gitbucket as `http://gitbucket:8080/root/test`
+  3. Create user on gitbucket for jenkins as `jenkinsbot`
+  3. Add `jenkinsbot` to collaborator of repository `root/test`
+  4. Add repository webhook `http://jenkins:9090/ghprbhook/`
+  5. create personal access token on `http://gitbucket:8080/jenkinsbot/_application`
   6. set jenkins global setting of GitHub Pull Request Builder on `http://jenkins:9090/manage`
     * GitHub server api URL = `http://gitbucket:8080/api/v3`
     * Access Token = created on step 5.
