@@ -5,6 +5,7 @@ Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servl
 * Configure your gitbucket IIS application folder (ex: C:\inetpub\wwwroot\gitbucket\)
    * add gitbucket.war to C:\inetpub\wwwroot\gitbucket\
    * add web.config to C:\inetpub\wwwroot\gitbucket\
+   * configure IIS_IUSRS to have write permissions to C:\inetpub\wwwroot\gitbucket\
 
 **Contents of web.config, assuming you want to install to http://hostname/gitbucket**
 ```xml
