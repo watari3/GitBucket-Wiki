@@ -6,6 +6,6 @@ Welcome to the GitBucket wiki!
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
  * [[Setup Jenkins GitHub pull request builder plugin]]
- * [[Connect to H2 console]]
+ * [[Connect to H2 database]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/takezoe/gitbucket/blob/master/doc/readme.md
