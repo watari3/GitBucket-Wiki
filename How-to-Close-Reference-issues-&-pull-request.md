@@ -14,6 +14,8 @@ The message MUST containt a string matching the following pattern: `KEYWORD #ISS
 - `resolves #X` 
 - `resolved #X` 
 
+It is also possible to close several issues in the same commit: just repeat several time the pattern to close issues. For example, the following commit message: `add new quick sort algorithm, fixes #4, resolve #6, closed #12` would close, the issues 4, 6 & 12 of the project on which the commit would occure.
+
 # Closing Pull Request
 
 Not yet available in version `3.4
