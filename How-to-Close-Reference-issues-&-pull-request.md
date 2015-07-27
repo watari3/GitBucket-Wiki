@@ -22,4 +22,6 @@ Not yet available in version `3.4
 
 # Referencing Isssues and Pull Requests
 
-just use the pattern `#ISSUE` in a commit message or in any comment on issues/PRs to make an html link reference to the item corresponding to `#ISSUE`.
+just use the pattern `#NUMBER` in a commit message or in any comment on issues/PRs to make an html link reference to the item corresponding to `#NUMBER`. 
+
+NUMBER can be the numeric identifier of either an Issue or a PullRequest.
