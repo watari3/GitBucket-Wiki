@@ -1,6 +1,6 @@
 # Gitbucket backup
 
-The following page describes an example of a possible [backup script](backup.sh) for your gitbucket installation.
+The following page describes an example of a possible [backup script](https://github.com/takezoe/gitbucket/wiki/Backup#backup-script) for your gitbucket installation.
 
 Feel free to inspire from it.
 
@@ -10,7 +10,7 @@ The backup of a gitbucket installation should be consistent between the database
 
 Of course the most important to keep is probably the git repositories, but hey if you need sometime to recover it would be cool that all PRs, issues, references and so on are in synch with the backups of the repositories no?
 
-The provided [backup script](backup.sh) tries to minimise as much as possible the time between the database backup and a clean stage of all repositories by doing the following steps:
+The provided [backup script](https://github.com/takezoe/gitbucket/wiki/Backup#backup-script) tries to minimise as much as possible the time between the database backup and a clean stage of all repositories by doing the following steps:
 
 - clone all repositories into a backup folder (creating only non already existing ones)
 - update all repositories
@@ -19,7 +19,7 @@ The provided [backup script](backup.sh) tries to minimise as much as possible th
 
 ## Using backup.sh
 
-How to use the provided [backup script](backup.sh)?
+How to use the provided [backup script](https://github.com/takezoe/gitbucket/wiki/Backup#backup-script)?
 
 `bash backup.sh [-v] GITBUCKET_HOME BACKUP_FOLDER [Database backup URL]`
 
