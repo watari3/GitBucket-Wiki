@@ -35,6 +35,7 @@ where
 I tested this script on windows using a msysgit installation (one copy of one coming bundled with [Sourcetree git client](https://www.sourcetreeapp.com/)).
 
 Here is a `backup.bat` file that could be launched on the server hosting gitbucket
+
 ```bat
 @echo off
 
@@ -48,6 +49,8 @@ bash backup.sh d:\gitbucket\work e:\backup\gitbucket http://localhost:8080/datab
 ```
 
 ## Backup script
+
+This is an example of backup script
 
 ```bash
 #!bin/bash
