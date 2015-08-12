@@ -9,5 +9,6 @@ Welcome to the GitBucket wiki!
  * [[Connect to H2 database]]
  * [[How to Close/Reference issues & pull request]]
  * [[Backup]]
+ * [[API/WebHook]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/takezoe/gitbucket/blob/master/doc/readme.md
