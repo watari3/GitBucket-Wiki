@@ -1,12 +1,12 @@
-# Gitbucket backup
+# GitBucket backup
 
-The following page describes an example of a possible [backup script](https://github.com/takezoe/gitbucket/wiki/Backup#backup-script) for your gitbucket installation.
+The following page describes an example of a possible [backup script](https://github.com/takezoe/gitbucket/wiki/Backup#backup-script) for your GitBucket installation.
 
 Feel free to inspire from it.
 
 ## What it does?
 
-The backup of a gitbucket installation should be consistent between the database state and the state of the git repositories.
+The backup of a GitBucket installation should be consistent between the database state and the state of the git repositories.
 
 Of course the most important to keep is probably the git repositories, but hey if you need sometime to recover it would be cool that all PRs, issues, references and so on are in synch with the backups of the repositories no?
 
@@ -26,15 +26,15 @@ How to use the provided [backup script](https://github.com/takezoe/gitbucket/wik
 where
 
 - -v: stands for verbose, when used the script will output more about what it is doing. Optional
-- GITBUCKET_HOME: is the full path to your gitbucket data folder. By default it might be `~/.gitbucket`
+- GITBUCKET_HOME: is the full path to your GitBucket data folder. By default it might be `~/.gitbucket`
 - BACKUP_FOLDER: is the full path to the folder into which you would like the backup to be done
-- Database backup URL: it is the full URL that forces gitbucket isntallation to perform a database export (see [PR-845](https://github.com/takezoe/gitbucket/pull/845)). This parameter is optional ; thus if it is ommited then no database export will be done.
+- Database backup URL: it is the full URL that forces GitBucket installation to perform a database export (see [PR-845](https://github.com/takezoe/gitbucket/pull/845)). This parameter is optional ; thus if it is ommitted then no database export will be done.
 
 ## Using from Windows
 
 I tested this script on windows using a msysgit installation (one copy of one coming bundled with [Sourcetree git client](https://www.sourcetreeapp.com/)).
 
-Here is a `backup.bat` file that could be launched on the server hosting gitbucket
+Here is a `backup.bat` file that could be launched on the server hosting GitBucket
 
 ```bat
 @echo off
@@ -166,13 +166,13 @@ else
 fi
 
 #
-# Export the gitbucket configuration
+# Export the GitBucket configuration
 # 
 echo "Configuration backup"
 cp $GITBUCKET_DATA/gitbucket.conf $BACKUP_FOLDER > /dev/null
 
 #
-# Export the gitbucket data directory (avatars, ...)
+# Export the GitBucket data directory (avatars, ...)
 # 
 echo "Avatars backup"
 tar -cf $BACKUP_FOLDER/data.tar $GITBUCKET_DATA/data > /dev/null 2>&1
