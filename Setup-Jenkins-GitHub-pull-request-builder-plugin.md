@@ -3,14 +3,14 @@
   3. Create repository on gitbucket as `http://gitbucket:8080/root/test`
   4. Create user on gitbucket for jenkins as `jenkinsbot`
       * Add `jenkinsbot` to collaborator of repository `root/test`
-  4. Add repository webhook `http://jenkins:9090/ghprbhook/`
-  5. Create personal access token on `http://gitbucket:8080/jenkinsbot/_application`
-  6. Set jenkins global setting of GitHub Pull Request Builder on `http://jenkins:9090/manage`
+  5. Add repository webhook `http://jenkins:9090/ghprbhook/`
+  6. Create personal access token on `http://gitbucket:8080/jenkinsbot/_application`
+  7. Set jenkins global setting of GitHub Pull Request Builder on `http://jenkins:9090/manage`
     * GitHub server api URL = `http://gitbucket:8080/api/v3`
-    * Access Token = created on step 5.
+    * Access Token = created on step 6.
     * Save.
-  7. Create job as `http://jenkins:9090/job/testjob/`
-  8. On http://jenkins:9090/job/testjob/configure,
+  8. Create job as `http://jenkins:9090/job/testjob/`
+  9. On http://jenkins:9090/job/testjob/configure,
     * GitHub project = `http://gitbucket:8080/root/test/`
     * Source Code Management
       * git
@@ -24,7 +24,7 @@
         * Admin list = `root`
     * Save.
 
-  9. hint
+  10. hint
    * jenkins log has a lot information that show on `http://jenkins:9090/log/all` .
    * user that create access token has permission to write repository ?
    * when you replace access token, but jenkins not use soon. please restart jenkins.
