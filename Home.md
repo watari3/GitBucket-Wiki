@@ -6,6 +6,7 @@ Welcome to the GitBucket wiki!
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
  * [[Setup Jenkins GitHub pull request builder plugin]]
+ * [[Setup Slack Integration]]
  * [[Connect to H2 database]]
  * [[How to Close/Reference issues & pull request]]
  * [[Backup]]
