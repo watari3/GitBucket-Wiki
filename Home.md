@@ -12,4 +12,4 @@ Welcome to the GitBucket wiki!
  * [[Backup]]
  * [[API/WebHook]]
 
-If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/takezoe/gitbucket/blob/master/doc/readme.md
+If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/gitbucket/gitbucket/blob/master/doc/readme.md
