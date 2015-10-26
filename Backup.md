@@ -53,7 +53,7 @@ bash backup.sh d:\gitbucket\work e:\backup\gitbucket http://localhost:8080/datab
 This is an example of backup script
 
 ```bash
-#!bin/bash
+#!/bin/bash
 
 DEBUG=0
 if [ "$1" = "-v" ]
