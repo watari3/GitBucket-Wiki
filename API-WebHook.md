@@ -14,6 +14,7 @@ Now implemented few api/webhook and few parameter yet. If you find some behavior
    * [List commits on a pull request](https://developer.github.com/v3/pulls/#list-commits-on-a-pull-request)
  * Repositories
    * [Get](https://developer.github.com/v3/repos/#get)
+   * [Create](https://developer.github.com/v3/repos/#create)
    * Status
      * [Create a Status](https://developer.github.com/v3/repos/statuses/#create-a-status)
      * [List Statuses for a specific Ref](https://developer.github.com/v3/repos/statuses/#list-statuses-for-a-specific-ref)
