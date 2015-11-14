@@ -2,6 +2,10 @@ The gitbucket api/webhook is designed for compatibility of [the GitHub's it](htt
 
 Now implemented few api/webhook and few parameter yet. If you find some behavior difference from GitHub, maybe, it is gitbucket's bug or feature not implemented yet :).
 
+## Authentication
+
+ Yet, [personal token in header](https://developer.github.com/v3/#oauth2-token-sent-in-a-header) only.
+
 ## API
 
  * Issues
