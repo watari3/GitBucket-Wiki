@@ -46,7 +46,7 @@ To improve GitBucket performance, you should add the following configuration to 
 server {
     ...
     location /assets/ {
-        proxy_pass              http://localhost:8080/gitbucket/assets/;
+        proxy_pass              http://localhost:8080/assets/;
         proxy_cache             cache;
         proxy_cache_key         $host$uri$is_args$args;
         proxy_cache_valid       200 301 302 1d;
