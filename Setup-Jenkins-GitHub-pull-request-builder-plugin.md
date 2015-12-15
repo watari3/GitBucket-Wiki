@@ -5,10 +5,20 @@
       * Add `jenkinsbot` to collaborator of repository `root/test`
   5. Add repository webhook `http://jenkins:9090/ghprbhook/`
   6. Create personal access token on `http://gitbucket:8080/jenkinsbot/_application`
-  7. Set jenkins global setting of GitHub Pull Request Builder on `http://jenkins:9090/manage`
-    * GitHub server api URL = `http://gitbucket:8080/api/v3`
-    * Access Token = created on step 6.
-    * Save.
+  7. Set on jenkins global setting `http://jenkins:9090/manage`
+      * 'GitHub Plugin Configuration'
+        * Credentials -> Add
+          * Type = 'Secret text'
+          * Secret = created on step 6.
+          * Add.
+        * GitHub API URL = `http://gitbucket:8080/api/v3`
+      * `GitHub Pull Request Builder`
+        * GitHub Server API URL = `http://gitbucket:8080/api/v3`
+        * Credentials = selcet credentials that you created some time ago.
+      * **old version ghprb **
+        * GitHub server api URL = `http://gitbucket:8080/api/v3`
+        * Access Token = created on step 6.
+        * Save.
   8. Create job as `http://jenkins:9090/job/testjob/`
   9. On http://jenkins:9090/job/testjob/configure,
     * GitHub project = `http://gitbucket:8080/root/test/`
