@@ -10,4 +10,4 @@
         ProxyPass /gitbucket http://localhost:8080/gitbucket
         ProxyPassReverse /gitbucket http://localhost:8080/gitbucket
 
-> Note! Apache and GitBucket context paths must be equal. 
+> Note! Apache and GitBucket context paths must be equal: `java --jar gitbucket.war --port=8080 --prefix=/gitbucket` (Note the leading / in the prefix)
