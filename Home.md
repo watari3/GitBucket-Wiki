@@ -2,6 +2,7 @@ Welcome to the GitBucket wiki!
 ====
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
+ * [[Installation on Mac]]
  * [[Installation on IIS and Helicontech Zoo]]
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
