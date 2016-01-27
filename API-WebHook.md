@@ -38,5 +38,6 @@ Now implemented few api/webhook and few parameter yet. If you find some behavior
 
  * [IssuesEvent](https://developer.github.com/v3/activity/events/types/#issuesevent)
  * [IssueCommentEvent](https://developer.github.com/v3/activity/events/types/#issuecommentevent)
+ * [PullRequestReviewCommentEvent](https://developer.github.com/v3/activity/events/types/#pullrequestreviewcommentevent)
  * [PullRequestEvent](https://developer.github.com/v3/activity/events/types/#pullrequestevent)
  * [PushEvent](https://developer.github.com/v3/activity/events/types/#pushevent)
