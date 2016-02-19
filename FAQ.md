@@ -18,3 +18,15 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: org/eclipse/j
         at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
         ...
 ```
+
+## How to upgrade GitBucket?
+
+See the [Installation](https://github.com/gitbucket/gitbucket#installation) section of README. 
+
+We strongly recommend to backup your data before upgrade GitBucket.
+
+## How to backup GitBucket data?
+
+Basically, you can backup GitBucket data by copying `GITBUCKET_HOME` directory (`~/.gitbucket` in default) to the other place **after stopping GitBucket**.
+
+See [[Backup]] also to check advanced topics about backup.
