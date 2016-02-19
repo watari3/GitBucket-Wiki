@@ -8,9 +8,9 @@ root / root
 
 ## Unsupported major.minor version 52.0
 
-GitBucket requires Java8.
+GitBucket requires Java8 or higher.
 
-Upgrade your Java installation to Java8 or later if you get the following exception:
+Upgrade your Java installation if you get the following exception:
 
 ```
 Exception in thread "main" java.lang.UnsupportedClassVersionError: org/eclipse/jetty/server/Handler : Unsupported major.minor version 52.0
