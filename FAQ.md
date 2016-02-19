@@ -8,6 +8,8 @@ root / root
 
 ## Unsupported major.minor version 52.0
 
+GitBucket requires Java8.
+
 Upgrade your Java installation to Java8 or later if you get the following exception:
 
 ```
