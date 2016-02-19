@@ -12,5 +12,6 @@ Welcome to the GitBucket wiki!
  * [[How to Close/Reference issues & pull request]]
  * [[Backup]]
  * [[API/WebHook]]
+ * [[FAQ]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/gitbucket/gitbucket/blob/master/doc/readme.md
