@@ -32,3 +32,12 @@ We strongly recommend to backup your data before upgrade GitBucket.
 Basically, you can backup GitBucket data by copying `GITBUCKET_HOME` directory (`~/.gitbucket` in default) to the other place **after stopping GitBucket**.
 
 See [[Backup]] also to check advanced topics about backup.
+
+## How to contribute to gitbucket
+
+You can help the project in many different ways:
+
+- we need readers to comment/correct/translate in good english the existing documentation/FAQ/wiki
+- we need help to write more documentation either in gitbucket main documentation, wiki or FAQ.
+- we need help to consume/answer issues. If you know any answer to some issues, please help us answering them.
+- when contributing, please follow our [contributing](https://github.com/gitbucket/gitbucket/blob/master/CONTRIBUTING.md) guidelines and respect the templates when creating issues and pull-request
