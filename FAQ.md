@@ -2,6 +2,14 @@
 
 Access to demo site on heroku: https://gitbucket.herokuapp.com/
 
+## Docker image?
+
+If you have docker host, this command just works(See [docker-gitbucket](https://github.com/f99aq8ove/docker-gitbucket)):
+
+`% docker run -d -p 8080:8080 -p 29418:29418 -v ${PWD}/gitbucket-data:/gitbucket f99aq8ove/gitbucket`
+
+Then you can access via HTTP to http://localhost:8080/, and you can also [[Reverse-proxy-with-Nginx]].
+
 ## What's default root username and password?
 
 root / root
