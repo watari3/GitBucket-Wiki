@@ -10,6 +10,8 @@ If you have docker host, this command just works(See [docker-gitbucket](https://
 
 Then you can access via HTTP to http://localhost:8080/, and you can also [[Reverse-proxy-with-Nginx]].
 
+Need plugins? Then you can allocate plugin JARs into `${PWD}/gitbucket-data/plugins/` (create if not exists), and restart the container.
+
 ## What's default root username and password?
 
 root / root
