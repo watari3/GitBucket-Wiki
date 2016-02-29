@@ -13,6 +13,7 @@ Welcome to the GitBucket wiki!
  * [[Backup]]
  * [[API/WebHook]]
  * [[Tracing & logging]]
+ * [[Deployment to JEE and Servlet containers]]
  * [[FAQ]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/gitbucket/gitbucket/blob/master/doc/readme.md
