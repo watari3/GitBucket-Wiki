@@ -1,10 +1,14 @@
 The gitbucket api/webhook is designed for compatibility of [the GitHub's it](https://developer.github.com/v3/).
 
-Now implemented few api/webhook and few parameter yet. If you find some behavior difference from GitHub, maybe, it is gitbucket's bug or feature not implemented yet :).
+The API enpoints are reachable under: `http(s)://yourgitbucket/api/v3`
+
+Gitbucket does not implement fully the gitbucket API/webhook and respects only a subset of parameters. If you find some behavior difference from GitHub, it can be a Gitbucket's bug or a feature not yet implemented :).
 
 ## Authentication
 
- Yet, [personal token in header](https://developer.github.com/v3/#oauth2-token-sent-in-a-header) only.
+ Yet, [personal OAUTH token in header](https://developer.github.com/v3/#oauth2-token-sent-in-a-header) only.
+
+The tokens can be created via the UI, by going into the "Account Settings" menu and selecting the "Applications" tab.
 
 ## API
 
@@ -33,6 +37,16 @@ Now implemented few api/webhook and few parameter yet. If you find some behavior
  * Users
    * [Get a single user](https://developer.github.com/v3/users/#get-a-single-user)
    * [Get the authenticated user](https://developer.github.com/v3/users/#get-the-authenticated-user)
+
+### Example
+
+With a default local installation, having created a token for the `root` user, calling
+
+`curl -H "Authorization: token 6b690aa9e528c54835619b2cb717f61035e9a013" http://localhost:8080/api/v3/user`
+
+answers
+
+`{"login":"root","email":"root@localhost","type":"User","site_admin":true     ,"created_at":"2016-04-01T13:27:12Z","url":"http://localhost:8080/api/v3/users/root","html_url":"http://localhost:8080/root"}`
 
 ## WebHook Events
 
