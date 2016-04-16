@@ -26,9 +26,9 @@ db {
 
 ## Data migration
 
-Since 4.0, GitBucket also provide database exporting and importing.
+Since 4.0, GitBucket also provide data exporting and importing.
 
-> TODO: Image
+![Data export and import](database_export.png)
 
 If you have existing data in embedded H2 database, you can move your daba as following sequence:
 
