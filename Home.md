@@ -1,5 +1,6 @@
 Welcome to the GitBucket wiki!
 ====
+ * [[External database configuration]]
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
  * [[Installation on Mac]]
