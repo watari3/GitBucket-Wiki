@@ -30,7 +30,7 @@ Since 4.0, GitBucket also provide data exporting and importing.
 
 ![Data export and import](database_export.png)
 
-If you have existing data in embedded H2 database, you can move your daba as following sequence:
+If you have existing data in embedded H2 database, you can move your data to external database from H2 database as following sequence:
 
 1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x series)
 2. Then upgrade to GitBucket 4.0
