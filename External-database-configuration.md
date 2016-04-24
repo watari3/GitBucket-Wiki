@@ -1,4 +1,4 @@
-Since 4.0, GitBucket supports MySQL and PostgreSQL, not only embedded H2 database.
+Since 4.0, GitBucket supports MySQL (>= 5.7) and PostgreSQL, not only embedded H2 database.
 
 This feature is still **experimental** in GitBuckt 4.0, so try to use as your own risk.
 
