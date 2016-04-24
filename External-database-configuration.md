@@ -6,7 +6,7 @@ This feature is still **experimental** in GitBuckt 4.0, so try to use as your ow
 
 You can configure database connection in `GITBUCKET_HOME/database.conf`:
 
-### MySQL
+### MySQL 5.7
 
 ```
 db {
@@ -20,7 +20,7 @@ db {
 
 ```
 db {
-  url = "jdbc:postgresql://192.168.99.100/gitbucket"
+  url = "jdbc:postgresql://localhost/gitbucket"
   user = "test"
   password = "test"
 }
