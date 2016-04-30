@@ -37,7 +37,8 @@ If you have existing data in embedded H2 database, you can move your data to ext
 1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x series)
 2. Then upgrade to GitBucket 4.0
 3. Export data as a **XML** file from H2 database at the administration console
-4. Configure external database and reboot GitBucket
+  - Exclude tables which is created by plug-ins if these plug-ins does not provide for GitBucket 4.x series. Recommend separate export for plug-in's tables. When 4.x supported version will be released, you can restore their data from the exported files.
+4. Setup the external database and update `GITBUCKET_HOME/database.conf` as mentioned above and reboot GitBucket
 5. Import an exported XML file into the configured external database at the administration console
 
 You can also export data as SQL file. The administration console on GitBucket does not support import from the SQL file, but you can import it using other database front-end tools or command-line client tools such as `mysql` or `psql` command.
