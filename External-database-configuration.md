@@ -6,6 +6,16 @@ This feature is still **experimental** in GitBuckt 4.0, so try to use as your ow
 
 You can configure database connection in `GITBUCKET_HOME/database.conf`:
 
+### H2 (default)
+
+```
+db {
+  url = "jdbc:h2:${DatabaseHome};MVCC=true"
+  user = "sa"
+  password = "sa"
+}
+```
+
 ### MySQL 5.7
 
 ```
