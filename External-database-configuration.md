@@ -53,7 +53,7 @@ If you have existing data in embedded H2 database, you can move your data to ext
 
 You can also export data as SQL file. The administration console on GitBucket does not support import from the SQL file, but you can import it using other database front-end tools or command-line client tools such as `mysql` or `psql` command.
 
-In addition, if you import to PostgreSQL, you have to run following SQL after that:
+In addition, if you import to **PostgreSQL**, you have to run following SQL after that:
 
 ```sql
 SELECT setval('label_label_id_seq', (select max(label_id) + 1 from label));
