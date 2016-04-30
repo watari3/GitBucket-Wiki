@@ -36,8 +36,23 @@ If you have existing data in embedded H2 database, you can move your data to ext
 
 1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x series)
 2. Then upgrade to GitBucket 4.0
-3. Export data from H2 database at the administration console
+3. Export data as a **XML** file from H2 database at the administration console
 4. Configure external database and reboot GitBucket
-5. Import exported data into the configured external database at the administration console
+5. Import an exported XML file into the configured external database at the administration console
+
+You can also export data as SQL file. The administration console on GitBucket does not support import from the SQL file, but you can import it using other database front-end tools or command-line client tools such as `mysql` or `psql` command.
+
+In addition, if you import to PostgreSQL, you have to run following SQL after that:
+
+```sql
+SELECT setval('label_label_id_seq', (select max(label_id) + 1 from label));
+SELECT setval('activity_activity_id_seq', (select max(activity_id) + 1 from activity));
+SELECT setval('access_token_access_token_id_seq', (select max(access_token_id) + 1 from access_token));
+SELECT setval('commit_comment_comment_id_seq', (select max(comment_id) + 1 from commit_comment));
+SELECT setval('commit_status_commit_status_id_seq', (select max(commit_status_id) + 1 from commit_status));
+SELECT setval('milestone_milestone_id_seq', (select max(milestone_id) + 1 from milestone));
+SELECT setval('issue_comment_comment_id_seq', (select max(issue_comment_id) + 1 from issue_comment));
+SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key));
+```
 
 This operation has a risk to break your data by unexpected reason, so we strongly recommend to backup all your data in `GITBUCKET_HOME` before upgrading GitBucket.
