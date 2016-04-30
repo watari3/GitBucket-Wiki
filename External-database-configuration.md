@@ -62,7 +62,7 @@ SELECT setval('access_token_access_token_id_seq', (select max(access_token_id) +
 SELECT setval('commit_comment_comment_id_seq', (select max(comment_id) + 1 from commit_comment));
 SELECT setval('commit_status_commit_status_id_seq', (select max(commit_status_id) + 1 from commit_status));
 SELECT setval('milestone_milestone_id_seq', (select max(milestone_id) + 1 from milestone));
-SELECT setval('issue_comment_comment_id_seq', (select max(issue_comment_id) + 1 from issue_comment));
+SELECT setval('issue_comment_comment_id_seq', (select max(comment_id) + 1 from issue_comment));
 SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key));
 ```
 
