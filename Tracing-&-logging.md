@@ -1,15 +1,15 @@
-Gitbucket uses slf4j and logback as implementation ; thus any logback configuration can apply to gitbucket logging system.
+Gitbucket uses `slf4j` and `logback` as implementation ; thus any logback configuration can apply to gitbucket logging system.
 
-Gitbucket provides its own logback.xml (still true in 3.11) preventing external configuration via providing this exact same file.
+Gitbucket provides its own `logback.xml` (still true in 4.0) preventing external configuration via providing this exact same file.
 Logback [official configuration](http://logback.qos.ch/manual/configuration.html) page explain how to override the logging settings:
 - provide a file `logback.groovy` at the root of the classpath
 - provide a file `logback-test.xml` at the root of the classpath
 - provide a file `logback.xml` at the root of the classpath (not usable since gitbucket provides its own)
 - provide an implementation of `com.qos.logback.classic.spi.Configurator` via ServiceLoader
 
-another possibility, detailed after in the documentation, is to provide the System property `logback.configurationFile` when launching the application and fill this property with the full path to configuration file.
+Another possibility, as explained in the documentation, is to provide the System property `logback.configurationFile` when launching the application and fill this property with the full path to configuration file.
 
-Using this latest technic, you could for example launch gitbucket using:
+Using this approach, you could for example launch gitbucket using:
 ```
 java -Dlogback.configurationFile=/opt/gitbucket/config/logback-settings.xml -jar gitbucket.war
 ```
@@ -56,11 +56,11 @@ In the above example, a logback configuration stored inside `/opt/gitbucket/conf
 ``` 
 
 The above configuration:
-- activates DEBUG traces for all gitbucket code
+- activates `DEBUG` traces for all gitbucket code
 - outputs the traces on 2 appenders:
   - STDOUT: a console appender printing on stdout by default
   - ROLLING: a file based appender tracing into files stored under `/opt/gitbucket/log/`
-- only INFO (and above severity) logs will be printed on the console due to the filter on the INFO level
+- only INFO (and above severity) logs will be printed on the console due to the filter on the `INFO` level
 - files in `/opt/gitbucket/log/` will roll daily or each time the file is over 25M
 
 This configuration is just provided as an example, please follow [logback documentation](http://logback.qos.ch/manual/index.html) to setup your own log settings. 
