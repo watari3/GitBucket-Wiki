@@ -1,4 +1,4 @@
-Gitbucket uses `slf4j` and `logback` as implementation ; thus any logback configuration can apply to gitbucket logging system.
+Gitbucket uses `slf4j` and `logback` as implementation; thus any logback configuration can apply to gitbucket logging system.
 
 Gitbucket provides its own `logback.xml` (still true in 4.0) preventing external configuration via providing this exact same file.
 Logback [official configuration](http://logback.qos.ch/manual/configuration.html) page explain how to override the logging settings:
