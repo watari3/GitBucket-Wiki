@@ -15,7 +15,7 @@ java -Dlogback.configurationFile=/opt/gitbucket/config/logback-settings.xml -jar
 ```
 
 In the above example, a logback configuration stored inside `/opt/gitbucket/config` would be used, such a file could look like to:
-```
+```xml
 <configuration debug="true" scan="true" scanPeriod="60 seconds">
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> 
     <!-- encoders are  by default assigned the type
