@@ -67,3 +67,9 @@ SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key
 ```
 
 This operation has a risk to break your data by unexpected reason, so we strongly recommend to backup all your data in `GITBUCKET_HOME` before upgrading GitBucket.
+
+If you fail to import XML, try to export data as **SQL** and import it into your database directory. For example, you can import the exported SQL file using `mysql` command in MySQL as:
+
+```
+$ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
+```
