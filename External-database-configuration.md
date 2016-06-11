@@ -42,6 +42,8 @@ Since 4.0, GitBucket also provide data exporting and importing.
 
 ![Data export and import](database_export.png)
 
+### Migration via XML (recommended)
+
 If you have existing data in embedded H2 database, you can move your data to external database from H2 database by following operation:
 
 1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x series)
@@ -68,7 +70,9 @@ SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key
 
 This operation has a risk to break your data by unexpected reason, so we strongly recommend to backup all your data in `GITBUCKET_HOME` before upgrading GitBucket.
 
-If you fail to import XML, try to export data as **SQL** and import it into your database directory. For example, you can import the exported SQL file using `mysql` command in MySQL as:
+### Migration via SQL
+
+If you fail to import XML (e.g. if an exported XML file is so large, importing might fail), try to export data as **SQL** and import it into your database directory. For example, you can import an exported SQL file using `mysql` command in MySQL as:
 
 ```
 $ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
