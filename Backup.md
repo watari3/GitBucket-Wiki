@@ -134,7 +134,7 @@ echo "Starting clone process"
 for fullRepositoryFolderPath in $repositories
 do
     repositoryFolder=${fullRepositoryFolderPath:$repositoriesFolderNameSize}
-    mirrorFolder=$BACKUP_FOLDER$repositoryFolder
+    mirrorFolder=$repositoriesBackupFolder$repositoryFolder
 
     createClone $fullRepositoryFolderPath $mirrorFolder
 done;
@@ -147,7 +147,7 @@ echo "Update repositories: phase 1"
 for fullRepositoryFolderPath in $repositories
 do
     repositoryFolder=${fullRepositoryFolderPath:$repositoriesFolderNameSize}
-    mirrorFolder=$BACKUP_FOLDER$repositoryFolder
+    mirrorFolder=$repositoriesBackupFolder$repositoryFolder
 
     updateRepository $mirrorFolder
 done;
@@ -185,7 +185,7 @@ echo "Update repositories: phase 2"
 for fullRepositoryFolderPath in $repositories
 do
     repositoryFolder=${fullRepositoryFolderPath:$repositoriesFolderNameSize}
-    mirrorFolder=$BACKUP_FOLDER$repositoryFolder
+    mirrorFolder=$repositoriesBackupFolder$repositoryFolder
 
     updateRepository $mirrorFolder
 done;
