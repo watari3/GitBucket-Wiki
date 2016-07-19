@@ -46,7 +46,7 @@ Since 4.0, GitBucket also provide data exporting and importing.
 
 If you have existing data in embedded H2 database, you can move your data to external database from H2 database by following operation:
 
-1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x) and then, upgrade to GitBucket 4.0. (See details in [[Upgrade from 3.x to 4.x]])
+1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x) and then, upgrade to GitBucket 4.x. (See details in [[Upgrade from 3.x to 4.x]])
 3. Export data as a **XML** file from H2 database at the administration console
   - Exclude tables which is created by plug-ins if these plug-ins does not provide for GitBucket 4.x series. Recommend separate export for plug-in's tables. When 4.x supported version will be released, you can restore their data from the exported files.
 4. Setup the external database and update `GITBUCKET_HOME/database.conf` as mentioned above and reboot GitBucket
@@ -76,3 +76,13 @@ If you fail to import XML (e.g. if an exported XML file is so large, importing m
 ```
 $ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
 ```
+
+## Migration of plugin data
+
+For some plugins which use the database such as [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin), you have to migrate plugin data also.
+
+1. Uninstall these plugins temporarily before upgrading to GitBucket 4.x.
+2. After upgrading to GitBucket 4.x, export GitBucket tables with plugin tables. (e.g. gitbucket-gist-plugin uses `GIST` and `GIST_COMMENT` table)
+   - If you would like to upgrade plugins individually, you can export GitBucket data without plugin tables and export only plugin tables to other files. You can import plugin tables after upgrading your plugins.
+3. Configure GitBucket to use external database, and install GitBucket 4.x supported version of plugins.
+4. Run GitBucket, and import the data which is exported in 2.
