@@ -3,7 +3,6 @@ Welcome to the GitBucket wiki!
 
 Installation
 ----
- * [[Upgrade from 3.x to 4.x]]
  * [[Installation on Mac]]
  * [[Installation on IIS and Helicontech Zoo]]
  * [[Deployment to JEE and Servlet containers]]
