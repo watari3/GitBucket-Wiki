@@ -1,3 +1,5 @@
+This page provides information on how to setup [Jenkins GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) with gitbucket to automatically build pull-requests with jenkins.
+
   1. Install jenkins with GitHub pull request builder plugin as `http://jenkins:9090/`
   2. Install gitbucket as `http://gitbucket:8080/`
   3. Create repository on gitbucket as `http://gitbucket:8080/root/test`
