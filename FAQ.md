@@ -40,6 +40,8 @@ If you had used [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-g
 3. can open snippets page
 4. `SELECT VERSION FROM VERSIONS WHERE MODULE_ID='gist'` -> `4.2.0`
 
+See [[Connect to H2 database]] to know how to execute SQL on the GitBucket database.
+
 ## How to upgrade GitBucket?
 
 See the [Installation](https://github.com/gitbucket/gitbucket#installation) section of README. 
