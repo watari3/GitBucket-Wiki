@@ -1,5 +1,6 @@
 Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy gitbucket as a java servlet on IIS
 
+* Use Gitbucket versions 3.10 and below, higher versions require Java 8
 * Install Java 7
 * Follow these [instructions](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) to install the  Helicontech Zoo Java hosting package
 * Configure your gitbucket IIS application folder (ex: C:\inetpub\wwwroot\gitbucket\)
