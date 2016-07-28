@@ -10,8 +10,12 @@ Gitbucket does not implement fully the gitbucket API/webhook and respects only a
 
 The tokens can be created via the UI, by going into the "Account Settings" menu and selecting the "Applications" tab.
 
+In v4.3 Experimental support for Basic Authentication merged.
+
 ## API
 
+ * Root Endpoint
+   * [List endpoints](https://developer.github.com/v3/#root-endpoint) (since v4.3, Only rate-limit endpoint explained)
  * Issues
    * Comments
      * [List comments on an issue](https://developer.github.com/v3/issues/comments/#list-comments-on-an-issue)
@@ -34,9 +38,22 @@ The tokens can be created via the UI, by going into the "Account Settings" menu 
      * [Create a Status](https://developer.github.com/v3/repos/statuses/#create-a-status)
      * [List Statuses for a specific Ref](https://developer.github.com/v3/repos/statuses/#list-statuses-for-a-specific-ref)
      * [Get the combined Status for a specific Ref](https://developer.github.com/v3/repos/statuses/#get-the-combined-status-for-a-specific-ref)
+   * Branches
+     * [List all branches for this repository](https://developer.github.com/v3/repos/branches/#list-branches) (since v4.3)
+   * Contents
+     * [List all contents of a file or direcotry in this repository](https://developer.github.com/v3/repos/contents/#get-contents) (since v4.3)
+   * Reference
+     * [Get a reference](https://developer.github.com/v3/git/refs/#get-a-reference) (since v4.3)
+   * Collaborators
+     * [List collaborators](https://developer.github.com/v3/repos/collaborators/#list-collaborators) (since v4.3)
  * Users
    * [Get a single user](https://developer.github.com/v3/users/#get-a-single-user)
    * [Get the authenticated user](https://developer.github.com/v3/users/#get-the-authenticated-user)
+   * [List repositories for this user](https://developer.github.com/v3/repos/#list-user-repositories) (since v4.3)
+ * Groups
+   * [Get a single group](https://developer.github.com/v3/orgs/#get-an-organization) (since v4.3)
+   * [List repositories for this group](https://developer.github.com/v3/repos/#list-organization-repositories) (since v4.3)
+
 
 ### Example
 
