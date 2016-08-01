@@ -6,11 +6,9 @@ Gitbucket does not implement fully the gitbucket API/webhook and respects only a
 
 ## Authentication
 
- Yet, [personal OAUTH token in header](https://developer.github.com/v3/#oauth2-token-sent-in-a-header) only.
+ Yet, [personal OAUTH token in header](https://developer.github.com/v3/#oauth2-token-sent-in-a-header) and [Basic Authentication (since v4.3)](https://developer.github.com/v3/#basic-authentication).
 
 The tokens can be created via the UI, by going into the "Account Settings" menu and selecting the "Applications" tab.
-
-In v4.3 Experimental support for Basic Authentication merged.
 
 ## API
 
