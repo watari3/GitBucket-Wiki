@@ -20,13 +20,15 @@ Integration
 ----
  * [[Setup Jenkins GitHub pull request builder plugin]]
  * [[Setup Slack Integration]]
+ * [How to create GitBucket plug-in](https://gitbucket.github.io/gitbucket-news/gitbucket/2015/06/29/how-to-create-plugin.html)
+ * [[API/WebHook]]
+ * [Community Plugins](http://gitbucket-plugins.github.io/)
 
 Tips
 ----
  * [[Connect to H2 database]]
  * [[How to Close/Reference issues & pull request]]
  * [[Backup]]
- * [[API/WebHook]]
  * [[FAQ]]
 
 If you are interested in GitBucket development, you can find documents for GitBucket development at: https://github.com/gitbucket/gitbucket/blob/master/doc/readme.md
