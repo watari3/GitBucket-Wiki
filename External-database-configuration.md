@@ -40,19 +40,21 @@ Since 4.0, GitBucket also provide data exporting and importing.
 
 ![Data export and import](database_export.png)
 
-### Migration via XML (recommended)
-
 If you have existing data in embedded H2 database, you can move your data to external database from H2 database by following operation:
 
 1. At first, you must upgrade to GitBucket 3.14 (This is the final version of 3.x) and then, upgrade to GitBucket 4.x.
-2. Export data as a **XML** file from H2 database at the administration console
+2. Export data as a SQL file from H2 database at the administration console
   - Exclude tables which is created by plug-ins if these plug-ins does not provide for GitBucket 4.x series. Recommend separate export for plug-in's tables. When 4.x supported version will be released, you can restore their data from the exported files.
 3. Setup the external database and update `GITBUCKET_HOME/database.conf` as mentioned above and reboot GitBucket
-4. Import an exported XML file into the configured external database at the administration console
+4. Import an exported SQL file into the configured external database at the administration console
 
-You can also export data as SQL file. The administration console on GitBucket does not support import from the SQL file, but you can import it using other database front-end tools or command-line client tools such as `mysql` or `psql` command.
+If you fail to import a SQL file, try to import it into your database directory. For example, you can import an exported SQL file using `mysql` command in MySQL as:
 
-In addition, if you import to **PostgreSQL**, you have to run following SQL after that:
+```
+$ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
+```
+
+In the case of **PostgreSQL**, you might have to run following to the setup next value of sequences:
 
 ```sql
 SELECT setval('label_label_id_seq', (select max(label_id) + 1 from label));
@@ -64,16 +66,7 @@ SELECT setval('milestone_milestone_id_seq', (select max(milestone_id) + 1 from m
 SELECT setval('issue_comment_comment_id_seq', (select max(comment_id) + 1 from issue_comment));
 SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key));
 ```
-
 This operation has a risk to break your data by unexpected reason, so we strongly recommend to backup all your data in `GITBUCKET_HOME` before upgrading GitBucket.
-
-### Migration via SQL
-
-If you fail to import XML (e.g. if an exported XML file is so large, importing might fail), try to export data as **SQL** and import it into your database directory. For example, you can import an exported SQL file using `mysql` command in MySQL as:
-
-```
-$ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
-```
 
 ## Migration of plugin data
 
