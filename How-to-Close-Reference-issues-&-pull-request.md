@@ -20,7 +20,7 @@ It is also possible to close several issues in the same commit: just repeat seve
 
 Not yet available in version `3.4
 
-# Referencing Isssues and Pull Requests
+# Referencing Issues and Pull Requests
 
 just use the pattern `#NUMBER` in a commit message or in any comment on issues/PRs to make an html link reference to the item corresponding to `#NUMBER`. 
 
