@@ -2,7 +2,7 @@ The gitbucket api/webhook is designed for compatibility of [the GitHub's it](htt
 
 The API enpoints are reachable under: `http(s)://yourgitbucket/api/v3`
 
-Gitbucket does not implement fully the gitbucket API/webhook and respects only a subset of parameters. If you find some behavior difference from GitHub, it can be a Gitbucket's bug or a feature not yet implemented :).
+Gitbucket does not implement fully the GitHub API/webhook and respects only a subset of parameters. If you find some behavior difference from GitHub, it can be a Gitbucket's bug or a feature not yet implemented :).
 
 ## Authentication
 
