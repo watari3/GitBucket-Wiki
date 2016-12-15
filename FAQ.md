@@ -1,6 +1,6 @@
 ## Can I test GitBucket actually before installation?
 
-Access to demo site on heroku: https://gitbucket.herokuapp.com/  (root/root)
+Access to demo site on heroku: https://gitbucket.herokuapp.com/
 
 ## What's default root username and password?
 
