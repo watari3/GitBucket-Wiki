@@ -41,6 +41,18 @@ Due to class loading restrictions inside JBoss/Wildfly, you need to explicitly a
   </deployment>
 </jboss-deployment-structure>
 ```
+# Wildfly Install Script
+You can use also a install script from [here](https://gist.github.com/rsoika/2d8bab41b18b9fb133c425277c655af7) to install gitbucket on Wildfly 9.x & 10.x on Linux. 
+
+    /bin/bash wildfly-install.sh [INSTALLDIR] [GITBUCKET-VERSION]
+
+You can specify the install directory of your wilfly installation and the gitbucket version. 
+
+Example:
+
+    /bin/bash wildfly-install.sh [INSTALLDIR] [GITBUCKET-VERSION]
+
+**Note:** The script must be run as root. The script assumes that wildfly is running with the user 'wildfly'. You can change this in your script if needed. 
 
 # Tomcat
 
