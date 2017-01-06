@@ -84,4 +84,4 @@ Some databases support the encyrption of the DB specific files on disk. In order
 
 For **H2 (default DB)**, the encryption steps are described here: http://www.h2database.com/html/features.html#file_encryption .
 
-**Note:** If encryption is active, the DB Console https://github.com/gitbucket/gitbucket/wiki/Connect-to-H2-database and other plug-ins that use their own connectin also need those encryption adjustments *(as they don't rely on the standard ```GITBUCKET_HOME/database.conf``` to get their connection from)*.
+**Note:** If encryption is active, the DB Console https://github.com/gitbucket/gitbucket/wiki/Connect-to-H2-database and other plug-ins that use their own connection also need those encryption adjustments *(as they don't rely on the standard ```GITBUCKET_HOME/database.conf``` to get their connection from)*.
