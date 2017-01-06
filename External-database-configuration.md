@@ -77,3 +77,11 @@ For some plugins which use the database such as [gitbucket-gist-plugin](https://
    - If you would like to upgrade plugins individually, you can export GitBucket data without plugin tables and export only plugin tables to other files. You can import plugin tables after upgrading your plugins.
 3. Configure GitBucket to use external database, and install GitBucket 4.x supported version of plugins.
 4. Run GitBucket, and import the data which is exported in 2.
+
+## Database Encryption
+
+Some databases support the encyrption of the DB specific files on disk. In order to activate such a functionality, the ```url``` specified in the ```GITBUCKET_HOME/database.conf``` file needs to adjusted according to the database encyrption specification.
+
+For **H2 (default DB)**, the encryption steps are described here: http://www.h2database.com/html/features.html#file_encryption .
+
+**Note:** If encryption is active, the DB Console https://github.com/gitbucket/gitbucket/wiki/Connect-to-H2-database and other plug-ins that use their own connectin also need those encryption adjustments *(as they don't rely on the standard ```GITBUCKET_HOME/database.conf``` to get their connection from)*.
