@@ -18,6 +18,7 @@ Gitbucket does not implement fully the GitHub API/webhook and respects only a su
  * Root Endpoint
    * [List endpoints](https://developer.github.com/v3/#root-endpoint) (since v4.3, Only rate-limit endpoint explained)
  * Issues
+   * [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository) (since v4.9)
    * [Get a single issue](https://developer.github.com/v3/issues/#get-a-single-issue) (since v4.8)
    * [Create an issue](https://developer.github.com/v3/issues/#create-an-issue) (since v4.9)
    * Comments
