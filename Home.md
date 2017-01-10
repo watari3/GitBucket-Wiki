@@ -26,6 +26,7 @@ Integration
 
 Tips
 ----
+ * [[List of URL Formats]]
  * [[Connect to H2 database]]
  * [[How to Close/Reference issues & pull request]]
  * [[Backup]]
