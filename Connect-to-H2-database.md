@@ -10,7 +10,7 @@ Then, you can see the connection form of the H2 console. To connect GitBucket da
 
 - Driver Class: org.h2.Driver
 - JDBC URL: jdbc:h2:~/.gitbucket/data
- - Note: Replace "~/.gitbucket" with your HOME directory if you changed the directory (e.g. "jdbc:h2:C:\GitBucket_HOME\data").
+  - Note: Replace "~/.gitbucket" with your HOME directory if you changed the directory (e.g. "jdbc:h2:C:\GitBucket_HOME\data").
 - User Name: sa
 - Password: sa
 
