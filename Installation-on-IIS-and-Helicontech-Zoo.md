@@ -72,8 +72,15 @@ In the above configuration, some file extensions are removed from request filter
 
 ### Troubleshooting
 
+#### Tomcat with IIS
 It should be noted that the docs for [Tomcat with IIS](http://tomcat.apache.org/connectors-doc/reference/iis.html), says the following:
 
 > Note that in a 64 Bit environment - at least for IIS 7 - the used IIS Application Pool should have "Enable 32-bit Applications" set to "False". Otherwise the redirector will not be called and returns an http code 404. If you think, the 32bit version of isapi_redirect.dll would do the job instead, you will get an http code 500, because the library is not loadable into a 64 Bit IIS.
 
 This is a problem that may or may not apply to the Helicontech Zoo, Jetty 8, setup that we use for this  Gitbucket installation or not (I have not thoroughly checked and do not know if this uses the same tech or not).  But if you attach Gitbucket to it's own IIS Application Pool with "Enable 32-bit Applications" set to "False" then Gitbucket does work using Helicontech Zoo and Jetty 8.
+
+#### Maximum Allowed Content Length
+Under a server of Windows + IIS environment, if you are not able to push large files (normally larger than 30,000,000 bytes) from any client, it could be that IIS is rejecting your requests. 
+In this case, you can raise the **Maximum allowed content length** value as [explained in this documentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
+
+Note: this could happen even if you are not using Helicontech Zoo or Tomcat as introduced above; a standalone app could also be interfered by IIS.
