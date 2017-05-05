@@ -14,7 +14,7 @@ db {
 }
 ```
 
-### MySQL 5.7
+### MySQL 5.7 (or higher)
 
 ```
 db {
@@ -24,7 +24,9 @@ db {
 }
 ```
 
-### PostgreSQL
+It's not supported officially, but it might work with MariaDB 10.2.1 (or higher) as well.
+
+### PostgreSQL 9.5 (or higher)
 
 ```
 db {
@@ -36,7 +38,7 @@ db {
 
 ## Data migration
 
-Since 4.0, GitBucket also provide data exporting and importing.
+GitBucket has provided data exporting and importing since 4.0.
 
 ![Data export and import](database_export.png)
 
