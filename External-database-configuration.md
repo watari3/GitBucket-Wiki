@@ -56,7 +56,9 @@ If you fail to import a SQL file, try to import it into your database directory.
 $ mysql -u root -p gitbucket < gitbucket-export-xxxxxxxx.sql
 ```
 
-In the case of **MySQL**, it might be caused following error if it contains names with different only uppercase and lowercase letters.
+### MySQL
+
+In the case MySQL, it might be caused following error if it contains names with different only uppercase and lowercase letters.
 
 ```
 ERROR 1062 (23000) at line 45: Duplicate entry 'mentaiko' for key 'PRIMARY'
@@ -64,7 +66,9 @@ ERROR 1062 (23000) at line 45: Duplicate entry 'mentaiko' for key 'PRIMARY'
 
 You can avoid this error by using `utf8mb4_ja_0900_as_cs` which is introduced in MySQL 8.0.1 as a collation.
 
-In the case of **PostgreSQL**, you might have to run following to the setup next value of sequences:
+### PostgreSQL
+
+In the case of PostgreSQL, you have to run following to the setup sequence values:
 
 ```sql
 SELECT setval('label_label_id_seq', (select max(label_id) + 1 from label));
