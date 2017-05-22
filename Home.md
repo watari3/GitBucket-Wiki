@@ -14,6 +14,7 @@ Configuration
  * [[External database configuration]]
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
+ * [[Performance]]
  * [[Tracing & logging]]
 
 Integration
