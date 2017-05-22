@@ -1,32 +1,33 @@
 Welcome to the GitBucket wiki!
 ====
 
-Installation
-----
+## 1. Installation
+
+ * [Installation](https://github.com/gitbucket/gitbucket#installation)
  * [[Installation on Mac]]
  * [[Installation on IIS and Helicontech Zoo]]
  * [[Deployment to JEE and Servlet containers]]
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
 
-Configuration
-----
+## 2. Configuration
+
  * [[External database configuration]]
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
  * [[Performance]]
  * [[Tracing & logging]]
 
-Integration
-----
+## 3. Integration
+
  * [[Setup Jenkins GitHub pull request builder plugin]]
  * [[Setup Slack Integration]]
  * [How to create GitBucket plug-in](https://gitbucket.github.io/gitbucket-news/gitbucket/2015/06/29/how-to-create-plugin.html)
  * [[API/WebHook]]
  * [Community Plugins](http://gitbucket-plugins.github.io/)
 
-Tips
-----
+## 4. Tips
+
  * [[List of URL Formats]]
  * [[Connect to H2 database]]
  * [[How to Close/Reference issues & pull request]]
