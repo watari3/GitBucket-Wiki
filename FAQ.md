@@ -1,17 +1,17 @@
 FAQ
 ===
 
-  1. Can I test GitBucket actually before installation?
+  1. [Can I test GitBucket actually before installation?](#q-1)
   1. What's default root username and password?
   1. Docker image?
   1. "Unsupported major.minor version 52.0" Error?
   1. ```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x
   1. How to upgrade GitBucket?
   1. How to backup GitBucket data?
-  1. How to contribute to GitBucket
+  1. [How to contribute to GitBucket?](#q-8)
 
 -----
-## [1. Can I test GitBucket actually before installation?](#q-1)
+## 1. Can I test GitBucket actually before installation?[](#q-1)
 
 There are 2 online installations that demo GitBucket capabilities:
 
@@ -72,7 +72,7 @@ Basically, you can backup GitBucket data by copying `GITBUCKET_HOME` directory (
 
 See [[Backup]] also to check advanced topics about backup.
 
-## [8. How to contribute to GitBucket?](#q-8)
+## [](#q-8)8. How to contribute to GitBucket?
 
 You can help the project in many different ways:
 
