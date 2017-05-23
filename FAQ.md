@@ -2,12 +2,12 @@ FAQ
 ===
 
   1. [Can I test GitBucket actually before installation?](#1-can-i-test-gitbucket-actually-before-installation)
-  1. [What's default root username and password?(#2-)
-  1. [Docker image?(#3-)
-  1. ["Unsupported major.minor version 52.0" Error?(#4-)
-  1. [```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x(#5-)
-  1. [How to upgrade GitBucket?(#6-)
-  1. [How to backup GitBucket data?(#7-)
+  1. [What's default root username and password?](#2-whats-default-root-username-and-password)
+  1. [Docker image?](#3-docker-image)
+  1. ["Unsupported major.minor version 52.0" Error?](#4-unsupported-majorminor-version-520-error)
+  1. [```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x](#5-gitbucket-gist-plugin-doesnt-work-after-upgrading-to-gitbucket-4x)
+  1. [How to upgrade GitBucket?](#6-how-to-upgrade-gitbucket)
+  1. [How to backup GitBucket data?](#7-how-to-backup-gitbucket-data)
   1. [How to contribute to GitBucket?](#8-how-to-contribute-to-gitbucket)
 
 -----
