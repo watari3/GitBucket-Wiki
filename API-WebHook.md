@@ -76,3 +76,4 @@ answers
  * [PullRequestReviewCommentEvent](https://developer.github.com/v3/activity/events/types/#pullrequestreviewcommentevent)
  * [PullRequestEvent](https://developer.github.com/v3/activity/events/types/#pullrequestevent)
  * [PushEvent](https://developer.github.com/v3/activity/events/types/#pushevent)
+ * [GollumEvent](https://developer.github.com/v3/activity/events/types/#gollumevent)
