@@ -1,9 +1,9 @@
 ### Prerequisites
 1. Is installed and running on your server.
-2. Gitbucket is running on some `port`. The default is `8080`.
-3. Know what domain you want Gitbucket running
+2. GitBucket is running on some `port`. The default is `8080`.
+3. Know what domain you want GitBucket running
 
-Nginx uses a configuration structure for virtual hosts that looks like */etc/nginx/sites-available* and */etc/nginx/sites-enabled*. This is fairly self explainatory: the *sites-available* directory is site configuration files that are available and may more or may not be enabled and *sites-enabled* are site configuration files which are live and Nginx is serving.
+Nginx uses a configuration structure for virtual hosts that looks like */etc/nginx/sites-available* and */etc/nginx/sites-enabled*. This is fairly self-explanatory: the *sites-available* directory is site configuration files that are available and may more or may not be enabled and *sites-enabled* are site configuration files which are live and Nginx is serving.
 
 ### Configuration
 1. Create a file like */etc/nginx/sites-available/gitbucket*
