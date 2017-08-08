@@ -94,7 +94,7 @@ For some plugins which use the database such as [gitbucket-gist-plugin](https://
 
 ## Database Encryption
 
-Some databases support the encyrption of the DB specific files on disk. In order to activate such a functionality, the ```url``` specified in the ```GITBUCKET_HOME/database.conf``` file needs to adjusted according to the database encyrption specification.
+Some databases support the encryption of the DB specific files on disk. In order to activate such a functionality, the ```url``` specified in the ```GITBUCKET_HOME/database.conf``` file needs to adjusted according to the database encryption specification.
 
 For **H2 (default DB)**, the encryption steps are described here: http://www.h2database.com/html/features.html#file_encryption .
 
