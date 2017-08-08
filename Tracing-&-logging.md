@@ -1,15 +1,15 @@
-Gitbucket uses `slf4j` and `logback` as implementation; thus any logback configuration can apply to gitbucket logging system.
+GitBucket uses `slf4j` and `logback` as implementation; thus any logback configuration can apply to GitBucket logging system.
 
-Gitbucket provides its own `logback.xml` (still true in 4.0) preventing external configuration via providing this exact same file.
+GitBucket provides its own `logback.xml` (still true in 4.0) preventing external configuration via providing this exact same file.
 Logback [official configuration](http://logback.qos.ch/manual/configuration.html) page explain how to override the logging settings:
 - provide a file `logback.groovy` at the root of the classpath
 - provide a file `logback-test.xml` at the root of the classpath
-- provide a file `logback.xml` at the root of the classpath (not usable since gitbucket provides its own)
+- provide a file `logback.xml` at the root of the classpath (not usable since GitBucket provides its own)
 - provide an implementation of `com.qos.logback.classic.spi.Configurator` via ServiceLoader
 
 Another possibility, as explained in the documentation, is to provide the System property `logback.configurationFile` when launching the application and fill this property with the full path to configuration file.
 
-Using this approach, you could for example launch gitbucket using:
+Using this approach, you could for example launch GitBucket using:
 ```
 java -Dlogback.configurationFile=/opt/gitbucket/config/logback-settings.xml -jar gitbucket.war
 ```
@@ -56,7 +56,7 @@ In the above example, a logback configuration stored inside `/opt/gitbucket/conf
 ``` 
 
 The above configuration:
-- activates `DEBUG` traces for all gitbucket code
+- activates `DEBUG` traces for all GitBucket code
 - outputs the traces on 2 appenders:
   - STDOUT: a console appender printing on stdout by default
   - ROLLING: a file based appender tracing into files stored under `/opt/gitbucket/log/`
