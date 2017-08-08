@@ -41,7 +41,7 @@ specifying the following option:
 GITBUCKET_JVM_OPTS="-Djavax.net.ssl.trustStore=/path/to/your/keystore"
 ```
 
-or in Gitbucket's **System Settings** as described above.
+or in GitBucket's **System Settings** as described above.
 
 You can use the following command to add your CA certificate to the
 keystore:
