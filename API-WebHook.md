@@ -1,6 +1,6 @@
 The gitbucket api/webhook is designed for compatibility of [the GitHub's it](https://developer.github.com/v3/).
 
-The API enpoints are reachable under: `http(s)://yourgitbucket/api/v3`
+The API endpoints are reachable under: `http(s)://yourgitbucket/api/v3`
 
 Gitbucket does not implement fully the GitHub API/webhook and respects only a subset of parameters. If you find some behavior difference from GitHub, it can be a Gitbucket's bug or a feature not yet implemented :).
 
@@ -45,7 +45,7 @@ Gitbucket does not implement fully the GitHub API/webhook and respects only a su
    * Branches
      * [List all branches for this repository](https://developer.github.com/v3/repos/branches/#list-branches) (since v4.3)
    * Contents
-     * [List all contents of a file or direcotry in this repository](https://developer.github.com/v3/repos/contents/#get-contents) (since v4.3)
+     * [List all contents of a file or directory in this repository](https://developer.github.com/v3/repos/contents/#get-contents) (since v4.3)
    * Reference
      * [Get a reference](https://developer.github.com/v3/git/refs/#get-a-reference) (since v4.3)
    * Collaborators
