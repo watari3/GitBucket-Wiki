@@ -1,6 +1,6 @@
-Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy gitbucket as a java servlet on IIS
+Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy GitBucket as a java servlet on IIS
 
-* Use Gitbucket versions 3.10 and below, higher versions require Java 8
+* Use GitBucket versions 3.10 and below, higher versions require Java 8
 * Install Java 7
 * Follow these [instructions](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) to install the  Helicontech Zoo Java hosting package
 * Configure your gitbucket IIS application folder (ex: C:\inetpub\wwwroot\gitbucket\)
@@ -77,7 +77,7 @@ It should be noted that the docs for [Tomcat with IIS](http://tomcat.apache.org/
 
 > Note that in a 64 Bit environment - at least for IIS 7 - the used IIS Application Pool should have "Enable 32-bit Applications" set to "False". Otherwise the redirector will not be called and returns an http code 404. If you think, the 32bit version of isapi_redirect.dll would do the job instead, you will get an http code 500, because the library is not loadable into a 64 Bit IIS.
 
-This is a problem that may or may not apply to the Helicontech Zoo, Jetty 8, setup that we use for this  Gitbucket installation or not (I have not thoroughly checked and do not know if this uses the same tech or not).  But if you attach Gitbucket to its own IIS Application Pool with "Enable 32-bit Applications" set to "False" then Gitbucket does work using Helicontech Zoo and Jetty 8.
+This is a problem that may or may not apply to the Helicontech Zoo, Jetty 8, setup that we use for this  GitBucket installation or not (I have not thoroughly checked and do not know if this uses the same tech or not).  But if you attach GitBucket to its own IIS Application Pool with "Enable 32-bit Applications" set to "False" then GitBucket does work using Helicontech Zoo and Jetty 8.
 
 #### Maximum Allowed Content Length
 Under a server of Windows + IIS environment, if you are not able to push large files (normally larger than 30,000,000 bytes) from any client, it could be that IIS is rejecting your requests. 
