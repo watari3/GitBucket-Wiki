@@ -1,13 +1,13 @@
-This page provides information on how to setup [Jenkins GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) with gitbucket to automatically build pull-requests with jenkins.
+This page provides information on how to setup [Jenkins GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) with GitBucket to automatically build pull-requests with Jenkins.
 
-  1. Install jenkins with GitHub pull request builder plugin as `http://jenkins:9090/`
-  2. Install gitbucket as `http://gitbucket:8080/`
-  3. Create repository on gitbucket as `http://gitbucket:8080/root/test`
-  4. Create user on gitbucket for jenkins as `jenkinsbot`
+  1. Install Jenkins with GitHub pull request builder plugin as `http://jenkins:9090/`
+  2. Install GitBucket as `http://gitbucket:8080/`
+  3. Create repository on GitBucket as `http://gitbucket:8080/root/test`
+  4. Create user on GitBucket for Jenkins as `jenkinsbot`
       * Add `jenkinsbot` to collaborator of repository `root/test`
   5. Add repository webhook `http://jenkins:9090/ghprbhook/`
   6. Create personal access token on `http://gitbucket:8080/jenkinsbot/_application`
-  7. Set on jenkins global setting `http://jenkins:9090/manage`
+  7. Set on Jenkins global setting `http://jenkins:9090/manage`
       * 'GitHub Plugin Configuration'
         * Credentials -> Add
           * Type = 'Secret text'
@@ -36,7 +36,7 @@ This page provides information on how to setup [Jenkins GitHub pull request buil
         * Admin list = `root`
     * Save.
 
-  10. hint
-   * jenkins log has a lot information that show on `http://jenkins:9090/log/all` .
-   * user that create access token has permission to write repository ?
-   * when you replace access token, but jenkins not use soon. please restart jenkins.
+  10. Hint
+   * Jenkins log has a lot information that show on `http://jenkins:9090/log/all` .
+   * User that create access token has permission to write repository ?
+   * When you replace access token, but Jenkins not use soon. please restart Jenkins.
