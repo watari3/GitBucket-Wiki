@@ -28,7 +28,7 @@ where
 - -v: stands for verbose, when used the script will output more about what it is doing. Optional
 - GITBUCKET_HOME: is the full path to your GitBucket data folder. By default it might be `~/.gitbucket`
 - BACKUP_FOLDER: is the full path to the folder into which you would like the backup to be done
-- Database backup URL: it is the full URL that forces GitBucket installation to perform a database export (see [PR-845](https://github.com/takezoe/gitbucket/pull/845)). This parameter is optional ; thus if it is ommitted then no database export will be done.
+- Database backup URL: it is the full URL that forces GitBucket installation to perform a database export (see [PR-845](https://github.com/takezoe/gitbucket/pull/845)). This parameter is optional ; thus if it is omitted then no database export will be done.
 
 ## Using from Windows
 
@@ -100,7 +100,7 @@ function createClone {
 }
 
 ##
-## update a clone folder, the update is down toward the latests state of it's default remote
+## update a clone folder, the update is down toward the latest state of its default remote
 ##
 function updateRepository {
     currentFolder=$(pwd)
