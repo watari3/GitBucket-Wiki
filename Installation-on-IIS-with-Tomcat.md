@@ -1,3 +1,31 @@
+## Tomcat 8.5 can be used to host GitBucket versions above 3.10 (Java 8)
+ * Install JRE 8
+ * [Install Tomcat 8.5 service on Windows Server](http://apache.ip-guide.com/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.exe) - install to C:\tomcat8
+ * [Download Tomcat connector for IIS](https://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/windows/tomcat-connectors-1.2.42-windows-x86_64-iis.zip)
+   * Copy isapi_redirect.dll from zip to C:\tomcat8\bin\isapi_redirect.dll
+ * Create Registry entries with Regedit @ HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0
+   * All entries are strings (REG_SZ).
+   * Name: "@=" Type: "REG_SZ" Data: ""
+   * Name: "extension_uri" Type: "REG_SZ" Data: "/jakarta/isapi_redirect.dll"
+   * Name: "log_file" Type: "REG_SZ" Data: "C:\tomcat8\logs\isapi_redirect.log"
+   * Name: "log_level" Type: "REG_SZ" Data: "error"
+   * Name: "worker_file" Type: "REG_SZ" Data: "C:\tomcat8\conf\workers.properties"
+   * Name: "worker_mount_file" Type: "REG_SZ" Data: "C:\tomcat8\conf\uriworkermap.properties"
+* Create file C:\tomcat8\conf\workers.properties
+```
+worker.list = worker1
+worker.worker1.host=localhost
+worker.worker1.port=8009
+worker.worker1.type=ajp13
+```
+* Create file C:\tomcat8\conf\uniworkermap.properties
+```
+/gitbucket*=worker1
+```
+
+* Configure IIS
+
+## Helicontech Zoo, can be used to host GitBucket versions 3.10 and below (Java 7).
 Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy GitBucket as a java servlet on IIS
 
 * Use GitBucket versions 3.10 and below, higher versions require Java 8
