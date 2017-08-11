@@ -34,7 +34,7 @@ worker.worker1.type=ajp13
 
 * place gitbucket.war in ```c:\tomcat8\webapps```
 
-* Configure system environment variable for ```GITBUCKET_HOME=D:\gitbucket_data``` and ```GITBUCKET_LOG_DIR=D:\gitbucket_data\logs``` 
+* Configure system environment variables for ```GITBUCKET_HOME=D:\gitbucket_data``` and ```GITBUCKET_LOG_DIR=D:\gitbucket_data\logs``` 
 
 * At this point gitbucket should be available from both http://localhost/gitbucket (via IIS) and http://localhost:8080/gitbucket (direct connect to Tomcat)
 
