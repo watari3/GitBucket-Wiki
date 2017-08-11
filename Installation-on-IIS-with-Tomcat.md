@@ -1,5 +1,6 @@
 ## Tomcat 8.5 can be used to host GitBucket versions above 3.10 (Java 8)
- * Install JRE 8
+* Tested on Windows Server 2012 R2 (Version 6.2, Build 9200) with IIS 8.5.9600.16384 
+* Install JRE 8
  * [Install Tomcat 8.5 service on Windows Server](http://apache.ip-guide.com/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.exe) - install to ```C:\tomcat8```, use default ports
  * [Download Tomcat connector for IIS](https://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/windows/tomcat-connectors-1.2.42-windows-x86_64-iis.zip)
    * Copy isapi_redirect.dll from zip to ```C:\tomcat8\bin\isapi_redirect.dll```
