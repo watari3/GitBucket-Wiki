@@ -26,6 +26,7 @@ worker.worker1.type=ajp13
 
 * Configure IIS
 
+  * Configure IIS server properties ```ISAPI and CGI Restrictions```. Add Path ```C:\tomcat8\bin\isapi_redirect.dll``` with description ```Tomcat Isapi Redirect```.
   * Create VirtualDirectory - **MUST** be named ```jakarta``` and point to ```C:\tomcat8\bin```
   * With```jakarta``` VirtualDirectory selected open ```Handler Mappings```  and choose ```Edit Feature Permissions```. Make sure Read, Script, and Execute permissions are checked.
   * Add ISAPI filter to IIS website configuration. Filter Name: ```jakarta```, Executable: ```C:\tomcat8\bin\isapi_redirect.dll```
