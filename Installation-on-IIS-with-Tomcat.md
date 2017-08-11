@@ -6,8 +6,8 @@
    * Copy isapi_redirect.dll from zip to ```C:\tomcat8\bin\isapi_redirect.dll```
  * Create Registry entries with Regedit @ ```HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0```
    * All entries are strings (REG_SZ).
-   * Name: ```@=``` Type: ```REG_SZ``` Data: ``````
-   * Name: ```extension_uri``` Type: "REG_SZ" Data: ```/jakarta/isapi_redirect.dll```
+   * Name: ```@=``` Type: ```REG_SZ``` Data:
+   * Name: ```extension_uri``` Type: ```REG_SZ``` Data: ```/jakarta/isapi_redirect.dll```
    * Name: ```log_file``` Type: ```REG_SZ``` Data: ```C:\tomcat8\logs\isapi_redirect.log```
    * Name: ```log_level``` Type: ```REG_SZ``` Data: ```error```
    * Name: ```worker_file``` Type: ```REG_SZ``` Data: ```C:\tomcat8\conf\workers.properties```
@@ -32,7 +32,7 @@ worker.worker1.type=ajp13
 
 * place gitbucket.war in ```c:\tomcat8\webapps```
 
-* At this point gitbucket should be available from both http://localhost:80/gitbucket (via IIS) and http://localhost:8080/gitbucket (direct connect to Tomcat)
+* At this point gitbucket should be available from both http://localhost/gitbucket (via IIS) and http://localhost:8080/gitbucket (direct connect to Tomcat)
 
 ## Helicontech Zoo, can be used to host GitBucket versions 3.10 and below (Java 7).
 Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy GitBucket as a java servlet on IIS
