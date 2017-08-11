@@ -38,7 +38,7 @@ worker.worker1.type=ajp13
 
 * At this point gitbucket should be available from both http://localhost/gitbucket (via IIS) and http://localhost:8080/gitbucket (direct connect to Tomcat)
 
-If you have trouble with this configuration refer to [Configure IIS 8 and Tomcat Connector ISAPI Filter on Windows Server 2012][https://www.lisenet.com/2016/configure-iis-8-and-tomcat-connector-isapi-filter-on-windows-server-2012/]
+If you have trouble with this configuration refer to [Configure IIS 8 and Tomcat Connector ISAPI Filter on Windows Server 2012](https://www.lisenet.com/2016/configure-iis-8-and-tomcat-connector-isapi-filter-on-windows-server-2012/)
 
 ## Helicontech Zoo, can be used to host GitBucket versions 3.10 and below (Java 7).
 Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy GitBucket as a java servlet on IIS
