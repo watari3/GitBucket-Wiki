@@ -25,6 +25,10 @@ worker.worker1.type=ajp13
 
 * Configure IIS
 
+  * Create VirtualDirectory - **MUST** be named jakarta and point to C:\tomcat8\bin
+  * Add ISAPI filter to IIS website configuration. Filter Name: "jakarta", Executable: "C:\tomcat8\bin\isapi_redirect.dll"
+  * The used IIS Application Pool should have "Enable 32-bit Applications" set to "False"
+
 ## Helicontech Zoo, can be used to host GitBucket versions 3.10 and below (Java 7).
 Using [Helicontech Zoo](http://www.helicontech.com/articles/deploying-java-servlet-applications-on-windows-with-iis/) we can deploy GitBucket as a java servlet on IIS
 
