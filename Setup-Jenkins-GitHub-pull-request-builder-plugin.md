@@ -17,7 +17,7 @@ This page provides information on how to setup [Jenkins GitHub pull request buil
       * `GitHub Pull Request Builder`
         * GitHub Server API URL = `http://gitbucket:8080/api/v3`
         * Credentials = select credentials that you created some time ago.
-      * **old version ghprb **
+      * **old version ghprb**
         * GitHub server api URL = `http://gitbucket:8080/api/v3`
         * Access Token = created on step 6.
         * Save.
