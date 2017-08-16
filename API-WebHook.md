@@ -1,8 +1,8 @@
-The GitBucket api/webhook is designed for compatibility of [the GitHub's it](https://developer.github.com/v3/).
+The GitBucket api/webhook is designed for compatibility with [GitHub's implementation](https://developer.github.com/v3/).
 
 The API endpoints are reachable under: `http(s)://yourgitbucket/api/v3`
 
-GitBucket does not fully implement the GitHub API/webhook and respects only a subset of parameters. If you find some behavior difference from GitHub, it can be a GitBucket's bug or a feature not yet implemented :).
+GitBucket does not fully implement the GitHub API/webhook and respects only a subset of parameters. If you find some behavior different from GitHub, it can be a GitBucket bug or a feature not yet implemented :).
 
 ## Authentication
 
