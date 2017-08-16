@@ -4,7 +4,7 @@
  * [Install Tomcat 8.5 service on Windows Server](http://apache.ip-guide.com/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.exe) - install to `C:\tomcat8`, use default ports
  * [Download Tomcat connector for IIS](https://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/windows/tomcat-connectors-1.2.42-windows-x86_64-iis.zip)
    * Copy isapi_redirect.dll from zip to `C:\tomcat8\bin\isapi_redirect.dll`
- * Create Registry entries with Regedit @ `HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0`
+ * Create Registry entries with Regedit:
 ```reg
 [HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
 @=
