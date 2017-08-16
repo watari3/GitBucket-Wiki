@@ -1,40 +1,42 @@
 ## Tomcat 8.5 can be used to host GitBucket versions above 3.10 (Java 8)
 * Tested on Windows Server 2012 R2 (Version 6.2, Build 9200) with IIS 8.5.9600.16384 
 * Install JRE 8
- * [Install Tomcat 8.5 service on Windows Server](http://apache.ip-guide.com/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.exe) - install to ```C:\tomcat8```, use default ports
+ * [Install Tomcat 8.5 service on Windows Server](http://apache.ip-guide.com/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.exe) - install to `C:\tomcat8`, use default ports
  * [Download Tomcat connector for IIS](https://www.apache.org/dist/tomcat/tomcat-connectors/jk/binaries/windows/tomcat-connectors-1.2.42-windows-x86_64-iis.zip)
-   * Copy isapi_redirect.dll from zip to ```C:\tomcat8\bin\isapi_redirect.dll```
- * Create Registry entries with Regedit @ ```HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0```
-   * All entries are strings (REG_SZ).
-   * Name: ```@=``` Type: ```REG_SZ``` Data:
-   * Name: ```extension_uri``` Type: ```REG_SZ``` Data: ```/jakarta/isapi_redirect.dll```
-   * Name: ```log_file``` Type: ```REG_SZ``` Data: ```C:\tomcat8\logs\isapi_redirect.log```
-   * Name: ```log_level``` Type: ```REG_SZ``` Data: ```error```
-   * Name: ```worker_file``` Type: ```REG_SZ``` Data: ```C:\tomcat8\conf\workers.properties```
-   * Name: ```worker_mount_file``` Type: ```REG_SZ``` Data: ```C:\tomcat8\conf\uriworkermap.properties```
-* Create file ```C:\tomcat8\conf\workers.properties```
+   * Copy isapi_redirect.dll from zip to `C:\tomcat8\bin\isapi_redirect.dll`
+ * Create Registry entries with Regedit @ `HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0`
+```reg
+[HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
+@=
+extension_uri="/jakarta/isapi_redirect.dll"
+log_file="C:\tomcat8\logs\isapi_redirect.log"
+log_level="error"
+worker_file="C:\tomcat8\conf\workers.properties"
+worker_mount_file="C:\tomcat8\conf\uriworkermap.properties"
+```
+* Create file `C:\tomcat8\conf\workers.properties`
 ```
 worker.list = worker1
 worker.worker1.host=localhost
 worker.worker1.port=8009
 worker.worker1.type=ajp13
 ```
-* Create file ```C:\tomcat8\conf\uniworkermap.properties```
+* Create file `C:\tomcat8\conf\uniworkermap.properties`
 ```
 /gitbucket*=worker1
 ```
 
 * Configure IIS
 
-  * Configure IIS server properties ```ISAPI and CGI Restrictions```. Add Path ```C:\tomcat8\bin\isapi_redirect.dll``` with description ```Tomcat Isapi Redirect```.
-  * Create VirtualDirectory - **MUST** be named ```jakarta``` and point to ```C:\tomcat8\bin```
-  * With```jakarta``` VirtualDirectory selected open ```Handler Mappings```  and choose ```Edit Feature Permissions```. Make sure Read, Script, and Execute permissions are checked.
-  * Add ISAPI filter to IIS website configuration. Filter Name: ```jakarta```, Executable: ```C:\tomcat8\bin\isapi_redirect.dll```
-  * The used IIS Application Pool should have ```Enable 32-bit Applications``` set to ```False```
+  * Configure IIS server properties `ISAPI and CGI Restrictions`. Add Path `C:\tomcat8\bin\isapi_redirect.dll` with description `Tomcat Isapi Redirect`.
+  * Create VirtualDirectory - **MUST** be named `jakarta` and point to `C:\tomcat8\bin`
+  * With`jakarta` VirtualDirectory selected open `Handler Mappings`  and choose `Edit Feature Permissions`. Make sure Read, Script, and Execute permissions are checked.
+  * Add ISAPI filter to IIS website configuration. Filter Name: `jakarta`, Executable: `C:\tomcat8\bin\isapi_redirect.dll`
+  * The used IIS Application Pool should have `Enable 32-bit Applications` set to `False`
 
-* place gitbucket.war in ```c:\tomcat8\webapps```
+* place gitbucket.war in `C:\tomcat8\webapps`
 
-* Configure system environment variables for ```GITBUCKET_HOME=D:\gitbucket_data``` and ```GITBUCKET_LOG_DIR=D:\gitbucket_data\logs``` 
+* Configure system environment variables for `GITBUCKET_HOME=D:\gitbucket_data` and `GITBUCKET_LOG_DIR=D:\gitbucket_data\logs` 
 
 * At this point gitbucket should be available from both http://localhost/gitbucket (via IIS) and http://localhost:8080/gitbucket (direct connect to Tomcat)
 
