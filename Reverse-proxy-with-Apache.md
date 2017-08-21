@@ -6,6 +6,7 @@
 1. Install and enable `mod_proxy` and `mod_proxy_http` modules.
 2. Add the following to your site configuration (assuming your GitBucket prefix is "gitbucket"):
                 
+        AllowEncodedSlashes NoDecode # ... or "On" for Apache-2.2
         ProxyPreserveHost On
         ProxyPass /gitbucket http://localhost:8080/gitbucket
         ProxyPassReverse /gitbucket http://localhost:8080/gitbucket
