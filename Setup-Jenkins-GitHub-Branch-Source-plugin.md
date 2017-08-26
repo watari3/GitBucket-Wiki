@@ -97,7 +97,7 @@ git push origin master
 ## Setup of the GitBucket repository
 
 - Create a user on GitBucket for Jenkins as `indythebot` *(in fact whatever you want)*
-  - Add `indythebot` to collaborator of repository `wey-yu/hello`
+  - Add `indythebot` as a collaborator of repository `wey-yu/hello`
 - Add repository webhook `http://jenkins:9090/github-webhook/` *(⚠️ don't forget the `/` at the end of the url)*
   - Choose `application/json` for **Content type**
   - Check **Pull request**
