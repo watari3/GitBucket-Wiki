@@ -111,7 +111,7 @@ git push origin master
 - Go to `http://jenkins:9090/configure`
 - At the **Global properties** section:
   - Check `Environment variables`
-  - Add this variable: `GITBUCKET_URL` with this value: `http://gitbucket:8080/git` *(⚠️ don't forget the `/git` at the end of the url)*
+  - Add this variable: `GITBUCKET_URL` with this value: `http://gitbucket:8080/git` *(⚠️ don't forget the `/git` at the end of the url)*, this variable is used by the `Jenkins` file
 - At the **GitHub Enterprise Servers** section: *(add a record if the section is empty)*
   - Type the API endpoint: `http://gitbucket:8080/api/v3`
   - Give a name to the endpoint: eg `gitbucket`
