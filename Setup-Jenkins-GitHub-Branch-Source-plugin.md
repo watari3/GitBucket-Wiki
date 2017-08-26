@@ -1,5 +1,7 @@
 This page provides information on how to setup [Jenkins GitHub Branch Source plugin](https://wiki.jenkins.io/display/JENKINS/GitHub+Branch+Source+Plugin) with GitBucket to use the **GitHub Organization** template job.
 
+> tested with https://github.com/gitbucket/gitbucket/releases/tag/4.15.0
+
 ## Prerequisites
 
   - Install Jenkins as `http://jenkins:9090/`
