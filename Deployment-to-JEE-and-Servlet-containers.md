@@ -67,7 +67,7 @@ Example:
 - `mkdir /srv/gitbucket`
 - `chown tomcat8:tomcat8 /var/gitbucket`
 - `echo "GITBUCKET_HOME=/var/gitbucket" >> /etc/default/tomcat8`
-- deploy `gitbucket.war` into `/var/lib/tomcat8/webapps
+- deploy `gitbucket.war` into `/var/lib/tomcat8/webapps`
 - `service tomcat8 restart`
 
 ## Tomcat 9
