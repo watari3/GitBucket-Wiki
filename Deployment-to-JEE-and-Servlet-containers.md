@@ -64,11 +64,9 @@ Example:
 
 - install java8
 - install tomcat8
-
-   mkdir /srv/gitbucket
-   chown tomcat8:tomcat8 /var/gitbucket
-   echo "GITBUCKET_HOME=/var/gitbucket" >> /etc/default/tomcat8
-
+- `mkdir /srv/gitbucket`
+- `chown tomcat8:tomcat8 /var/gitbucket`
+- `echo "GITBUCKET_HOME=/var/gitbucket" >> /etc/default/tomcat8`
 - deploy `gitbucket.war` into `/var/lib/tomcat8/webapps
 - `service tomcat8 restart`
 
