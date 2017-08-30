@@ -23,6 +23,7 @@ grant all privileges on `gitbucket`.* to testuser@localhost identified by 'testp
 flush privileges; 
 quit
 ```
+GITBUCKET_HOME/database.conf :
 ```
 db {
   url = "jdbc:mysql://localhost/gitbucket?useUnicode=true&characterEncoding=utf8"
