@@ -79,6 +79,7 @@ SELECT setval('commit_status_commit_status_id_seq', (select max(commit_status_id
 SELECT setval('milestone_milestone_id_seq', (select max(milestone_id) + 1 from milestone));
 SELECT setval('issue_comment_comment_id_seq', (select max(comment_id) + 1 from issue_comment));
 SELECT setval('ssh_key_ssh_key_id_seq', (select max(ssh_key_id) + 1 from ssh_key));
+SELECT setval('priority_priority_id_seq', (select max(priority_id) + 1 from priority));
 ```
 This operation has a risk to break your data by unexpected reason, so we strongly recommend to backup all your data in `GITBUCKET_HOME` before upgrading GitBucket.
 
