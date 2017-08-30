@@ -15,12 +15,19 @@ db {
 ```
 
 ### MySQL 5.7 (or higher)
-
+prerequisites:
+```
+mysql -uroot -p -hlocalhost
+create database gitbucket;
+grant all privileges on `gitbucket`.* to testuser@localhost identified by 'testpassword';
+flush privileges; 
+quit
+```
 ```
 db {
   url = "jdbc:mysql://localhost/gitbucket?useUnicode=true&characterEncoding=utf8"
-  user = "test"
-  password = "test"
+  user = "testuser"
+  password = "testpassword"
 }
 ```
 
