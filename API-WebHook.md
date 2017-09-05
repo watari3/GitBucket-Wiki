@@ -44,6 +44,8 @@ GitBucket does not fully implement the GitHub API/webhook and respects only a su
      * [Get the combined Status for a specific Ref](https://developer.github.com/v3/repos/statuses/#get-the-combined-status-for-a-specific-ref)
    * Branches
      * [List all branches for this repository](https://developer.github.com/v3/repos/branches/#list-branches) (since v4.3)
+   * Commits
+     * [Get a single commit](https://developer.github.com/v3/repos/commits/#get-a-single-commit) (since v4.17)
    * Contents
      * [List all contents of a file or directory in this repository](https://developer.github.com/v3/repos/contents/#get-contents) (since v4.3)
    * Reference
