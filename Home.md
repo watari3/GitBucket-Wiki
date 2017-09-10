@@ -21,6 +21,7 @@ Welcome to the GitBucket wiki!
 ## 3. Integration
 
  * [[Setup Jenkins GitHub pull request builder plugin]]
+ * [[Setup Jenkins GitHub Branch Source plugin]]
  * [[Setup Slack Integration]]
  * [How to create GitBucket plug-in](https://gitbucket.github.io/gitbucket-news/gitbucket/2015/06/29/how-to-create-plugin.html)
  * [[API/WebHook]]
