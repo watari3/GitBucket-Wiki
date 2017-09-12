@@ -104,7 +104,7 @@ git push origin master
   - Choose `application/json` for **Content type**
   - Check **Pull request**
   - Check **Push**
-  - **Remark**: currently the hook does not seem to trigger Jenkins on push or when pull request
+  - ⚠️ **Remark**: currently the hook does not seem to trigger Jenkins on push or when pull request
 - Create personal access token for `indythebot` on `http://gitbucket:8080/indythebot/_application`
 
 ## Setup of Jenkins
