@@ -104,6 +104,7 @@ git push origin master
   - Choose `application/json` for **Content type**
   - Check **Pull request**
   - Check **Push**
+  - **Remark**: currently the hook does not seem to trigger Jenkins on push or when pull request
 - Create personal access token for `indythebot` on `http://gitbucket:8080/indythebot/_application`
 
 ## Setup of Jenkins
@@ -147,7 +148,7 @@ git push origin master
   - Keep only the **Discover branches** behavior and select the `all branches` strategy
   - Check the **Project Recognizers** section: you should have a **Pipeline Jenkinsfile** record with `Jenkinsfile` value for the `Script Path` field
 - At **the Scan Organization Triggers**
-  - Uncheck the `Periodically if not otherwise run` checkbox
+  - ⚠️ Check the `Periodically if not otherwise run` checkbox, and set to **1 minute** (because currently the web-hook seems not working correctly°
 - Save
 
 ## Return to the `hello` repository
