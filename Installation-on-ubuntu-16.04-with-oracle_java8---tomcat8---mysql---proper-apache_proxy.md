@@ -1,6 +1,6 @@
 # Installation on ubuntu 16.04 with tomcat8 + mysql + proper apache proxy
 
-This is basically copy-paste from http://blog.sjas.de/posts/gitbucket-installation-howto-ubuntu-1604-java8-tomcat8-apache-mysql.html which I wrote for myself. Since I quote mysql, it's not stolen. ;)
+This is basically copy-paste from http://blog.sjas.de/posts/gitbucket-installation-howto-ubuntu-1604-java8-tomcat8-apache-mysql.html which I wrote for myself. Since I quote myself, it's not stolen. ;)
 
 ## goal
 
