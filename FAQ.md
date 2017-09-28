@@ -26,13 +26,7 @@ root / root
 
 ## 3. Docker image?
 
-If you have docker host, this command just works(See [docker-gitbucket](https://github.com/f99aq8ove/docker-gitbucket)):
-
-`% docker run -d -p 8080:8080 -p 29418:29418 -v ${PWD}/gitbucket-data:/gitbucket f99aq8ove/gitbucket`
-
-Then you can access via HTTP to http://localhost:8080/, and you can also [[Reverse-proxy-with-Nginx]].
-
-Need plugins? Then you can allocate plugin JARs into `${PWD}/gitbucket-data/plugins/` (create if not exists), and restart the container.
+See https://github.com/gitbucket/gitbucket/wiki/Docker for more details.
 
 ## 4. "Unsupported major.minor version 52.0" Error?
 
