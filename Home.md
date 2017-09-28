@@ -6,10 +6,12 @@ Welcome to the GitBucket wiki!
  * [Installation](https://github.com/gitbucket/gitbucket#installation)
  * [[Installation on Mac]]
  * [[Installation on IIS with Tomcat]]
+ * Installation using [[Docker]]
  * [[Deployment to JEE and Servlet containers]]
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
  * [[Ubuntu 16.04, proper Apache reverse proxy, Tomcat8, oracle Java8, Mysql as complete HOWTO|Installation-on-ubuntu-16.04-with-oracle_java8---tomcat8---mysql---proper-apache_proxy]]
+ 
 
 ## 2. Configuration
 
