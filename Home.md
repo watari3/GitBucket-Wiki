@@ -23,6 +23,7 @@ Welcome to the GitBucket wiki!
 
 ## 3. Integration
 
+ * [[Setup Jenkins Multibranch Pipeline and Organization]]
  * [[Setup Jenkins GitHub pull request builder plugin]]
  * [[Setup Jenkins GitHub Branch Source plugin]]
  * [[Setup Slack Integration]]
