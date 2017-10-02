@@ -73,7 +73,7 @@ Configure GitBucket:
 1. Create `jenkins` user and add it to your group.
 
 Configure Jenkins:
-1. Open **Credentials** - *Add Credentials*.
+1. Open **Credentials** - **Add Credentials**.
 1. Fill followings and save.
     * **Username**: `jenkins`
     * **Password**: password of above
