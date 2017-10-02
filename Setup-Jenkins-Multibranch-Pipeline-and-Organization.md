@@ -1,4 +1,4 @@
-This page shows how to setup Jenkins Multibranch Pipeline and GitBucket.
+This page shows how to setup Jenkins Multibranch Pipeline jobs and Organization folders.
 
 ## Prerequisite
 
