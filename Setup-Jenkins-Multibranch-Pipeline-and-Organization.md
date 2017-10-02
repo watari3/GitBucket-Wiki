@@ -9,11 +9,11 @@ This page shows how to setup Jenkins Multibranch Pipeline and GitBucket.
 
 ## Creating a Multibranch Pipeline job
 
-Configure Jenkins.
+Configure Jenkins:
 1. Open **Manage Jenkins** - **Configure System**.
 1. Add a server in **GitHub Enterprise Servers** section. API endpoint should be like `http://gitbucket.example.com/api/v3`.
 
-Add a job on Jenkins.
+Add a job on Jenkins:
 1. Open **New Item**.
 1. Enter job name and mark as a **Multibranch Pipeline**. Then, click **OK**.
 1. Add a GitHub source in **Branch Sources** section.
@@ -23,14 +23,14 @@ Add a job on Jenkins.
     * **Repository**: select your repository
 1. Click **Save**.
 
-Configure a webhook on GitBucket.
+Configure a webhook on GitBucket:
 1. Open your repository - **Settings** - **Service Hooks**.
 1. Click **Add webhook** button.
 1. Fill followings and save.
     * **Payload URL**: `http://jenkins.example.com/github-webhook/`
     * **Which events would you like to trigger this webhook?**: Push, Pull Request
 
-Create a `Jenkinsfile` on your repository.
+Create a `Jenkinsfile` on your repository:
 ```groovy
 pipeline {
   agent any
@@ -48,7 +48,7 @@ A new build should be started immediately on Jenkins.
 
 ## Creating an Organization folder
 
-Add a job on Jenkins.
+Add a job on Jenkins:
 1. Open **New Item**.
 1. Enter job name and mark as a **GitHub Organization**. Then, click **OK**.
 1. Add a GitHub source in **Branch Sources** section.
@@ -57,7 +57,7 @@ Add a job on Jenkins.
     * **Owner**: group
 1. Click **Save**.
 
-Configure a webhook on GitBucket.
+Configure a webhook on GitBucket:
 1. Open your group - **Edit group** - **Service Hooks**.
 1. Click **Add webhook** button.
 1. Fill followings and save.
@@ -66,6 +66,21 @@ Configure a webhook on GitBucket.
 
 Then, your group and repositories should be shown in Jenkins.
 
-## More
+## For better security
+
+Configure GitBucket:
+1. Open **System settings** and set **Anonymous access** to **Deny**.
+1. Create `jenkins` user and add it to your group.
+
+Configure Jenkins:
+1. Open **Credentials** - *Add Credentials*.
+1. Fill followings and save.
+    * **Username**: `jenkins`
+    * **Password**: password of above
+    * **Description**: `GitBucket access credential`
+
+Then, fix jobs to use credentials.
+
+## See also
 
 - [Branches and Pull Requests - jenkins.io](https://jenkins.io/doc/book/pipeline/multibranch/)
