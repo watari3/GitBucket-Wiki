@@ -76,7 +76,7 @@ Configure Jenkins:
 1. Open **Credentials** - **Add Credentials**.
 1. Fill followings and save.
     * **Username**: `jenkins`
-    * **Password**: password of above
+    * **Password**: password of `jenkins`
     * **Description**: `GitBucket access credential`
 
 Then, fix jobs to use credentials.
