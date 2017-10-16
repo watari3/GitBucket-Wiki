@@ -6,7 +6,7 @@ Welcome to the GitBucket wiki!
  * [Installation](https://github.com/gitbucket/gitbucket#installation)
  * [[Installation on Mac]]
  * [[Installation on IIS with Tomcat]]
- * Installation using [[Docker]]
+ * [[Installation using Docker|Docker]]
  * [[Deployment to JEE and Servlet containers]]
  * [[Reverse proxy with Nginx]]
  * [[Reverse proxy with Apache]]
