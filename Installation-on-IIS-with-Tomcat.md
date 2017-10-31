@@ -33,6 +33,7 @@ worker.worker1.type=ajp13
   * With`jakarta` VirtualDirectory selected open `Handler Mappings`  and choose `Edit Feature Permissions`. Make sure Read, Script, and Execute permissions are checked.
   * Add ISAPI filter to IIS website configuration. Filter Name: `jakarta`, Executable: `C:\tomcat8\bin\isapi_redirect.dll`
   * The used IIS Application Pool should have `Enable 32-bit Applications` set to `False`
+  * Under `Request Filtering` for the website hosting the `jakarta` VirtualDirectory.  Request filters for the VirtualDirectory itself do nothing, you must modify the parent website. Remove request filters for *.java, *.cs and *.vb. If you do not remove these filters then files viewed in gitbucket with these extensions will give a 404 error. You may wish to remove additional filters too such as .csproj.
 
 * place gitbucket.war in `C:\tomcat8\webapps`
 
