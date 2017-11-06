@@ -6,7 +6,7 @@
    * Copy isapi_redirect.dll from zip to `C:\tomcat8\bin\isapi_redirect.dll`
  * Create Registry entries with Regedit:
 ```reg
-[HKEY_LOCAL_MACHINE\SOFRWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
 @=
 extension_uri="/jakarta/isapi_redirect.dll"
 log_file="C:\tomcat8\logs\isapi_redirect.log"
