@@ -21,7 +21,7 @@ worker.worker1.host=localhost
 worker.worker1.port=8009
 worker.worker1.type=ajp13
 ```
-* Create file `C:\tomcat8\conf\uniworkermap.properties`
+* Create file `C:\tomcat8\conf\uriworkermap.properties`
 ```
 /gitbucket*=worker1
 ```
