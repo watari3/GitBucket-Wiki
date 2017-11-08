@@ -20,7 +20,7 @@ Welcome to the GitBucket wiki!
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
  * [[Performance]]
- * [[Tracing & logging]]
+ * [[Tracing and logging]]
 
 ## 3. Integration
 
@@ -36,7 +36,7 @@ Welcome to the GitBucket wiki!
 
  * [[List of URL Formats]]
  * [[Connect to H2 database]]
- * [[How to Close/Reference issues & pull request]]
+ * [[How to Close/Reference issues and pull request]]
  * [[Backup]]
  * [[FAQ]]
 
