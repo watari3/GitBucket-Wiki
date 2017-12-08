@@ -25,6 +25,7 @@ Welcome to the GitBucket wiki!
 ## 3. Integration
 
  * [[Setup Jenkins Multibranch Pipeline and Organization]]
+   * [Gitbucket, Jenkins, Maven, JGitver integration example](https://github.com/jgitver/jgitver-maven-plugin/wiki/automatic-builds-for-maven%2C-jenkins-and-gitbucket)
  * [[Setup Jenkins GitHub pull request builder plugin]]
  * [[Setup Jenkins GitHub Branch Source plugin]]
  * [[Setup Slack Integration]]
