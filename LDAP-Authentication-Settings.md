@@ -15,6 +15,7 @@ This Wiki page describes how to configure and troubleshoot it.
 | Bind Password | Password for Bind DN account | password |
 | Base DN | Top level DN of your LDAP directory tree (used for user search) | dc=example,dc=com |
 | User name attribute | Name of the LDAP attribute. This is used as the GitBucket username | uid |
+| Additional filter condition | LDAP filter query. Only users matching this filter are allowed to log in | &#124;(memberOf=cn=Accounting,ou=Groups,dc=example,dc=com)(memberOf=cn=Development,ou=Groups,dc=example,dc=com) |
 | Mail address attribute | Email address of LDAP attribute | mail |
 | Enable TLS | Whether to use encrypted connection | checked |
 | Keystore | Path to the Java keystore | /etc/pki/java/cacerts |
