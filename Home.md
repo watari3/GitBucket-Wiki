@@ -13,7 +13,7 @@ Welcome to the GitBucket wiki!
  * [[Reverse proxy with Caddy]]
  * [[Ubuntu 16.04, proper Apache reverse proxy, Tomcat8, oracle Java8, Mysql as complete HOWTO|Installation-on-ubuntu-16.04-with-oracle_java8---tomcat8---mysql---proper-apache_proxy]]
  * [[Install as a systemd Service]]
-* [Installation on CentOS 7 with PostgreSQL and Tomcat](https://noobient.com/post/169866128061/installing-gitbucket-with-postgresql-and-tomcat-on)
+* [Installation on CentOS 7 with PostgreSQL and Tomcat](https://noobient.com/post/169866128061/installing-gitbucket-with-postgresql-and-tomcat-on) (external site)
 
 ## 2. Configuration
 
