@@ -20,6 +20,7 @@ Welcome to the GitBucket wiki!
  * [[External database configuration]]
  * [[Enabling SSH access to repository]]
  * [[LDAP Authentication Settings]]
+ * [[OpenID Connect Settings]]
  * [[Performance]]
  * [[Tracing and logging]]
 
