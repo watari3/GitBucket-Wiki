@@ -6,7 +6,6 @@ Check if your IdP satisfies the followings:
 
 - A client ID and client secret must be given by the IdP.
 - The IdP must provide its metadata on `ISSUER_URL/.well-known/openid-configuration`.
-- The IdP must provide an user identifier by the `sub` claim.
 - The IdP must provide an email address by the `email` claim.
 - The IdP should provide full name of a user by the `name` claim.
 - The IdP may provide a username by the `preferred_username` claim.
