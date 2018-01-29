@@ -25,7 +25,7 @@ GitBucket does the followings on the OpenID Connect authentication:
 
 ### Google Identity Provider (Google Apps)
 
-Setup Google Identity Provider:
+Setup the Google Identity Provider:
 
 1. Open https://console.developers.google.com/apis/credentials
 1. Create an OAuth client ID.
@@ -33,7 +33,7 @@ Setup Google Identity Provider:
     - Authorized redirect URIs: `http://localhost:8080/signin/oidc`
 1. Check the client ID and client secret of the OAuth client.
 
-Setup GitBucket:
+Setup your GitBucket:
 
 1. Sign in as an administrator.
 1. Open the system settings.
@@ -49,9 +49,13 @@ Note that any Google users can sign in to your GitBucket. Make sure restricted p
 
 See also https://developers.google.com/identity/protocols/OpenIDConnect.
 
+### Azure AD
+
+(This may work. Please feel free to write instructions, anyone)
+
 ### Keycloak
 
-Setup Keycloak:
+Setup your Keycloak:
 
 1. Create a new Client on your Keycloak.
     - Client ID: `gitbucket`
@@ -59,7 +63,7 @@ Setup Keycloak:
     - Access Type: confidential
     - Valid Redirect URIs: `http://localhost:8080/signin/oidc`
 
-Setup GitBucket:
+Setup your GitBucket:
 
 1. Sign in as an administrator.
 1. Open the system settings.
