@@ -4,7 +4,7 @@ You can enable SSH for Git access at the system settings page. A hostname and a 
 
 ![SSH configuration](ssh_configuration1.png)
 
-Also, you have to set the base url of your GitBucket instance to enable SSH access.
+Also, you have to set the base url of your GitBucket instance to enable SSH access. Note that if you have a reverse proxy and it has a different hostname from the GitBucket server, a hostname in the base url is different from a hostname for SSH.
 
 ![Base URL is required](ssh_configuration2.png)
 
