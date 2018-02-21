@@ -1,6 +1,6 @@
 ## Configuration
 
-You can enable SSH for Git access at the administration console. A hostname and a port number which are used for SSH access are required.
+You can enable SSH for Git access at the system settings page. A hostname and a port number which are used for SSH access are required.
 
 ![SSH configuration](ssh_configuration1.png)
 
