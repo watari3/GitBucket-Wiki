@@ -22,7 +22,7 @@ First, create a key using `ssh-keygen`:
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-`id_rsa` and `id_rsa.pub` are generated in `~/.ssh`. Then, copy & paste content of `id_rsa.pub` to SSH Keys in the account settings of GitBucket: 
+`id_rsa` and `id_rsa.pub` are generated in `~/.ssh`. Then, register the content of `id_rsa.pub` at the account settings of GitBucket: 
 
 ![Register public key](ssh_configuration4.png)
 
