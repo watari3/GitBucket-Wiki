@@ -2,15 +2,15 @@
 
 You can enable SSH for Git access at the administration console. A hostname and a port number which are used for SSH access are required.
 
-![](ssh_configuration1.png)
+![SSH configuration](ssh_configuration1.png)
 
-Also, you have to set the base url of your GitBucket instance.
+Also, you have to set the base url of your GitBucket instance to enable SSH access.
 
-![](ssh_configuration2.png)
+![Base URL is required](ssh_configuration2.png)
 
 Then, repository url for SSH becomes available.
 
-![](ssh_configuration3.png)
+![SSH became available](ssh_configuration3.png)
 
 ## SSH key
 
