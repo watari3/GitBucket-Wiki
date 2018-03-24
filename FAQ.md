@@ -29,7 +29,7 @@ root / root
 
 GitBucket has a limitation of password as below.
 
-- Use alphanumeric character
+- Use alphanumeric character, "-", "_" and "."
 
 If you use more strong password, GitBucket suggests to use external authorization system like LDAP.
 
