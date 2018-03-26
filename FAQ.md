@@ -3,12 +3,13 @@ FAQ
 
   1. [Can I test GitBucket actually before installation?](#1-can-i-test-gitbucket-actually-before-installation)
   1. [What's default root username and password?](#2-whats-default-root-username-and-password)
-  1. [Docker image?](#3-docker-image)
-  1. ["Unsupported major.minor version 52.0" Error?](#4-unsupported-majorminor-version-520-error)
-  1. [```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x](#5-gitbucket-gist-plugin-doesnt-work-after-upgrading-to-gitbucket-4x)
-  1. [How to upgrade GitBucket?](#6-how-to-upgrade-gitbucket)
-  1. [How to backup GitBucket data?](#7-how-to-backup-gitbucket-data)
-  1. [How to contribute to GitBucket?](#8-how-to-contribute-to-gitbucket)
+  1  [What's limitation of password?](#3-whats-limitation-of-password)
+  1. [Docker image?](#4-docker-image)
+  1. ["Unsupported major.minor version 52.0" Error?](#5-unsupported-majorminor-version-520-error)
+  1. [```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x](#6-gitbucket-gist-plugin-doesnt-work-after-upgrading-to-gitbucket-4x)
+  1. [How to upgrade GitBucket?](#7-how-to-upgrade-gitbucket)
+  1. [How to backup GitBucket data?](#8-how-to-backup-gitbucket-data)
+  1. [How to contribute to GitBucket?](#9-how-to-contribute-to-gitbucket)
 
 -----
 ## 1. Can I test GitBucket actually before installation?
@@ -24,11 +25,19 @@ This demo site contains mostly all known plugins ; i.e. the official ones + the 
 
 root / root
 
-## 3. Docker image?
+## 3. What's limitation of password?
+
+GitBucket has a limitation of password as below.
+
+- Use alphanumeric character, "-", "_" and "."
+
+If you use more strong password, GitBucket suggests to use external authorization system like LDAP.
+
+## 4. Docker image?
 
 See https://github.com/gitbucket/gitbucket/wiki/Docker for more details.
 
-## 4. "Unsupported major.minor version 52.0" Error?
+## 5. "Unsupported major.minor version 52.0" Error?
 
 GitBucket requires Java8 or higher.
 
@@ -43,7 +52,7 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: org/eclipse/j
         ...
 ```
 
-## 5. ```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x
+## 6. ```gitbucket-gist-plugin``` doesn't work after upgrading to GitBucket 4.x
 
 If you had used [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) with GitBucket 3.x, it does not work after upgrading to GitBucket 4.x. Solution is below:
 
@@ -54,19 +63,19 @@ If you had used [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-g
 
 See [[Connect to H2 database]] to know how to execute SQL on the GitBucket database.
 
-## 6. How to upgrade GitBucket?
+## 7. How to upgrade GitBucket?
 
 See the [Installation](https://github.com/gitbucket/gitbucket#installation) section of README. 
 
 We strongly recommend to backup your data before upgrade GitBucket.
 
-## 7. How to backup GitBucket data?
+## 8. How to backup GitBucket data?
 
 Basically, you can backup GitBucket data by copying `GITBUCKET_HOME` directory (`~/.gitbucket` in default) to the other place **after stopping GitBucket**.
 
 See [[Backup]] also to check advanced topics about backup.
 
-## 8. How to contribute to GitBucket?
+## 9. How to contribute to GitBucket?
 
 You can help the project in many different ways:
 
